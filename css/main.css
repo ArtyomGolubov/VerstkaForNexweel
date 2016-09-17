@@ -1,3 +1,89 @@
 ﻿body {
     background-image: url(../img/bg-body.png);
+    min-width: 320px;
 }
+
+/*HEADER BEGIN*/
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    margin: 20px 0px 0px 0px;
+}
+
+.p18 {
+    font-size: 18px;
+    font-family: Roboto-Regular;
+    /*letter-spacing: .1px;*/
+}
+
+.p15 {
+    font-size: 15px;
+    font-family: Roboto-Regular;
+}
+
+.brown {
+    color: #59341d;
+}
+
+.orange {
+    color: #f99b30;
+}
+
+.header_text {
+    
+}
+
+/*.time {
+    display:inline-block;
+    margin: -10px 0;
+}*/
+
+.callback {
+    background-image: url(../img/icons/phone.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.callback div>div:last-child {
+    margin: -10px 0;
+}
+
+.bold {
+    font-family: Roboto-bold;
+}
+
+.opening_hours {
+    background-image: url(../img/icons/clock.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.opening_hours div>div {
+    margin: -13px 0;
+}
+
+.delivery {
+    background-image: url(../img/icons/track.png);
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    margin-top: 30px;
+}
+
+.delivery div>div {
+    margin: -13px 0;
+}
+
+.user_block {
+    background-image: url(../img/icons/user.png);
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    margin-top: 30px;
+}
+
+/*HEADER END*/

@@ -2,12 +2,48 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+    .p18 {
+        font-size: 15px;
+    }
 
-}
+    .p15 {
+        font-size: 12px;
+    }
+
+    .callback div > div:last-child {
+        margin: -5px 0;
+    }
+
+    /*.callback {
+        position:relative; left: 0px;
+    }
+
+    .opening_hours {
+        position:relative; left: -60px;
+    }*/
+ }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    .p18 {
+        font-size: 15px;
+    }
 
+    .p15 {
+        font-size: 12px;
+    }
+
+    /*.callback{
+        background-image: none;
+    }
+
+    .opening_hours{
+        background-image: none;
+    }
+
+    .delivery{
+        background-image: none;
+    }*/
 }
 
 /* Small Devices, Tablets */
@@ -34,6 +70,8 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
+
+
 }
 
 /* Extra Small Devices, Phones */
