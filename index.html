@@ -14,53 +14,60 @@
     <link rel="stylesheet" href="css/fonts.css" />
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="container">
+    <header class="wrapper">
+        <div>
+            <div class="container container-fluid">
                 <div class="row">
                     <div class="logo col-md-2 col-sm-3">
                         <img class="img-responsive" src="img/logo.png" alt="logo" />
                     </div>
                     <div class="col-md-7 col-sm-6">
-                            <div class="info row">
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="callback">
-                                        <div class="header_text">
-                                            <div class="p18 brown">(050)&nbsp;450-33-34</div>
-                                            <div class="p18 brown">(044)&nbsp;450-33-34</div>
-                                        </div>
-                                        <a href="#" class="p15 orange bold">Перезвоните мне</a>
+                        <div class="info row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="callback">
+                                    <div class="header_text">
+                                        <div class="p18 brown">(050)&nbsp;450-33-34</div>
+                                        <div class="p18 brown">(044)&nbsp;450-33-34</div>
                                     </div>
+                                    <a href="#" class="p15 orange bold">Перезвоните мне</a>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="opening_hours">                                      
-                                        <div class="header_text">
-                                            <p class="p15 brown">Время работы</p>
-                                            <div class="time">
-                                                <span class="p15 brown">с</span>
-                                                <span class="p18 orange">9:00</span>
-                                                <span class="p15 brown">до</span>
-                                                <span class="p18 orange">23:00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <div class="delivery">
-                                        <div class="header_text">
-                                            <p class="p15 brown">Доставка блюд</p>
-                                            <div class="time">
-                                                <span class="p15 brown">с</span>
-                                                <span class="p18 orange">9:00</span>
-                                                <span class="p15 brown">до</span>
-                                                <span class="p18 orange">23:00</span>
-                                                <p class="p15 brown">(без выходных)</p>
-                                            </div>
-                                            
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="opening_hours">
+                                    <div class="header_text">
+                                        <p class="p15 brown">Время работы</p>
+                                        <div class="time">
+                                            <span class="p15 brown">с</span>
+                                            <span class="p18 orange">9:00</span>
+                                            <span class="p15 brown">до</span>
+                                            <span class="p18 orange">23:00</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="delivery">
+                                    <div class="header_text" id="delivery_1">
+                                        <p class="p15 brown" id="time_1">Доставка блюд</p>
+                                        <div class="time">
+                                            <span class="p15 brown">с</span>
+                                            <span class="p18 orange">9:00</span>
+                                            <span class="p15 brown">до</span>
+                                            <span class="p18 orange">23:00</span>
+                                            <p class="p15 brown">(без выходных)</p>
+                                        </div>
+                                    </div>
+                                    <div class="header_text" id="delivery_2">
+                                        <span class="p15 brown" id="time_1">Доставка блюд</span>
+                                        <span class="p15 brown">с</span>
+                                        <span class="p18 orange">9:00</span>
+                                        <span class="p15 brown">до</span>
+                                        <span class="p18 orange">23:00</span>
+                                        <p class="p15 brown">(без выходных)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="user_block col-sm-2">
                         <a class="p15 brown bold">Войти</a>/
@@ -69,14 +76,107 @@
                 </div>
             </div>
         </div>
+
+        <!--<nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">-->
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <!--<div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>-->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <ul class="nav nav-justified nav_main" id="menu">
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Схема&nbsp;заведения</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">О&nbsp;ресторане</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            <!--</div>
+        </nav>-->
+
+                <!--<nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav nav-justified nav_main">
+                                <li class="active"><a href="#">Главная</a></li>
+                                <li><a href="#">Меню</a></li>
+                                <li><a href="#">Схема&nbsp;заведения</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">О&nbsp;ресторане</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>-->
     </header>
-    <nav>
 
-    </nav>
+    <section>
+        <div id="carousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
 
-    <script src="libs/jquery/jquery-2.1.4.min.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="img_for_slider1">
+                        <img src="img/food_1.png" alt="" class="center-block img-responsive" />
+                    </div>
+                    <div class="capt_for_slider1">
+                        <h3>Приходи в четверг и получи <span class="orange"><large>2&nbsp;шашлыка</large></span> по цене одного!*</h3>
+                        <p>*При условии заказа более чем на 200 грн. на одного человека</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img_for_slider1">
+                        <img src="img/food_1.png" alt="" class="center-block img-responsive" />
+                    </div>
+                    <div class="capt_for_slider1">
+                        <h3>Второй слайд</h3>
+                        <p>Описание второго слайда</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img_for_slider1">
+                        <img src="img/food_1.png" alt="" class="center-block img-responsive" />
+                    </div>
+                    <div class="capt_for_slider1">
+                        <h3>Третий слайд</h3>
+                        <p>Описание третьего слайда</p>
+                    </div>
+                </div>
+            </div>
 
-    <script src="js/common.js"></script>
+            <a href="#carousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#carousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </section>
+
+        <script src="libs/jquery/jquery-2.1.4.min.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="js/common.js"></script>
 </body>
 </html>

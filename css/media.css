@@ -13,14 +13,6 @@
     .callback div > div:last-child {
         margin: -5px 0;
     }
-
-    /*.callback {
-        position:relative; left: 0px;
-    }
-
-    .opening_hours {
-        position:relative; left: -60px;
-    }*/
  }
 
 /* Medium Devices, Desktops */
@@ -33,17 +25,13 @@
         font-size: 12px;
     }
 
-    /*.callback{
-        background-image: none;
+    #delivery_1 {
+        display: none;
     }
 
-    .opening_hours{
-        background-image: none;
+    #delivery_2 {
+        display: inline-block;
     }
-
-    .delivery{
-        background-image: none;
-    }*/
 }
 
 /* Small Devices, Tablets */
@@ -71,7 +59,10 @@
 		animation: none !important;
 	}
 
-
+    
+    #carousel {
+        height: 330px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -104,7 +95,13 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    #delivery_1 {
+        display: inline-block;
+    }
 
+    #delivery_2 {
+        display: none;
+    }
 }
 
 /* Large Devices, Wide Screens */

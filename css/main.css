@@ -1,6 +1,8 @@
 ﻿body {
     background-image: url(../img/bg-body.png);
     min-width: 320px;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 /*HEADER BEGIN*/
@@ -23,6 +25,10 @@
 .p15 {
     font-size: 15px;
     font-family: Roboto-Regular;
+}
+
+.bold {
+    font-family: Roboto-bold;
 }
 
 .brown {
@@ -51,10 +57,6 @@
 
 .callback div>div:last-child {
     margin: -10px 0;
-}
-
-.bold {
-    font-family: Roboto-bold;
 }
 
 .opening_hours {
@@ -87,3 +89,93 @@
 }
 
 /*HEADER END*/
+
+/*NAVBAR BEGIN*/
+
+.nav_main {
+    margin: 36px auto;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #512c15;
+}
+
+.nav li {
+    color: #fff;
+    background: linear-gradient(#7a5e4b, #512c15);
+    border-right: 1px solid;
+    border-color: #fff;
+}
+
+.nav li:last-child {
+    border:none;
+}
+
+.nav li a {
+    color: #fff;
+    margin: 0px 30px 0px 30px;
+    font-family: Roboto-bold;
+}
+
+.nav li a:hover {
+    color: #f89b2f;
+    background-color: transparent;
+    margin: 0px 30px 0px 30px;
+}
+
+/**/
+/*.navbar-default {
+    border: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.navbar-toggle {
+    display:block;
+}*/
+/*NAVBAR END*/
+
+/*SLIDER-1 BEGIN*/
+
+#carousel {
+    height: 500px;
+    background-color: #ecece0;
+}
+
+.img_for_slider1 {
+    float: right;
+    margin-top: 10%;
+    width:  50%;
+    height: 100%;
+}
+
+.capt_for_slider1 {
+    position: relative;
+    float: left; 
+    margin-top: 10%;
+    width:  50%;
+    height: 100%;
+    padding: 5%;
+    font-family: Roboto-Bold;
+    color: #512c15;
+    /*font-size: 3vw;*/
+}
+
+.capt_for_slider1 span {
+    font-size: 1.3em;
+}
+
+#carousel li {
+    border: 2px solid;
+    border-color: #512c15;
+    width: 16px;
+    height: 16px;
+}
+
+#carousel li.active {
+    background-color: #f89b2f;
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+}
+
+/*SLIDER-1 END*/
