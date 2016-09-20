@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/jssor_slider.css"/>
+
+    <script src="libs/jquery/jquery-2.1.4.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jssor.slider.min.js"></script>
+    <script src="js/jssor_slider_init.js"></script>
 </head>
 <body>
     <header class="wrapper">
@@ -19,6 +25,7 @@
             <div class="container container-fluid">
                 <div class="row">
                     <div class="logo col-md-2 col-sm-3">
+                        <h1 class="text-hide" style="margin-bottom: -130px; position: absolute;">Ресторан "Кебаб"</h1>
                         <img class="img-responsive" src="img/logo.png" alt="logo" />
                     </div>
                     <div class="col-md-7 col-sm-6">
@@ -29,7 +36,7 @@
                                         <div class="p18 brown">(050)&nbsp;450-33-34</div>
                                         <div class="p18 brown">(044)&nbsp;450-33-34</div>
                                     </div>
-                                    <a href="#" class="p15 orange bold">Перезвоните мне</a>
+                                    <a href="#" class="p15 orange bold" data-toggle="modal" data-target="#myModal">Перезвоните мне</a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
@@ -79,104 +86,648 @@
 
         <!--<nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">-->
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <!--<div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!--<div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>-->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <ul class="nav nav-justified nav_main" id="menu">
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">Схема&nbsp;заведения</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">О&nbsp;ресторане</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <!--</div>
+        </nav>-->
+        <!--<nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                </div>-->
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-
-                <ul class="nav nav-justified nav_main" id="menu">
-                    <li class="active"><a href="#">Главная</a></li>
-                    <li><a href="#">Меню</a></li>
-                    <li><a href="#">Схема&nbsp;заведения</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">О&nbsp;ресторане</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            <!--</div>
-        </nav>-->
-
-                <!--<nav class="navbar navbar-default" role="navigation">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav nav-justified nav_main">
-                                <li class="active"><a href="#">Главная</a></li>
-                                <li><a href="#">Меню</a></li>
-                                <li><a href="#">Схема&nbsp;заведения</a></li>
-                                <li><a href="#">Новости</a></li>
-                                <li><a href="#">О&nbsp;ресторане</a></li>
-                                <li><a href="#">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>-->
-    </header>
-
-    <section>
-        <div id="carousel" class="carousel slide">
-            <ol class="carousel-indicators">
-                <li class="active" data-target="#carousel" data-slide-to="0"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="img_for_slider1">
-                        <img src="img/food_1.png" alt="" class="center-block img-responsive" />
-                    </div>
-                    <div class="capt_for_slider1">
-                        <h3>Приходи в четверг и получи <span class="orange"><large>2&nbsp;шашлыка</large></span> по цене одного!*</h3>
-                        <p>*При условии заказа более чем на 200 грн. на одного человека</p>
-                    </div>
                 </div>
-                <div class="item">
-                    <div class="img_for_slider1">
-                        <img src="img/food_1.png" alt="" class="center-block img-responsive" />
-                    </div>
-                    <div class="capt_for_slider1">
-                        <h3>Второй слайд</h3>
-                        <p>Описание второго слайда</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img_for_slider1">
-                        <img src="img/food_1.png" alt="" class="center-block img-responsive" />
-                    </div>
-                    <div class="capt_for_slider1">
-                        <h3>Третий слайд</h3>
-                        <p>Описание третьего слайда</p>
-                    </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav nav-justified nav_main">
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li><a href="#">Меню</a></li>
+                        <li><a href="#">Схема&nbsp;заведения</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">О&nbsp;ресторане</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>-->
 
-            <a href="#carousel" class="left carousel-control" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a href="#carousel" class="right carousel-control" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
+    </header>
+
+    <section id="carousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel" data-slide-to="0"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="img_for_slider1">
+                    <img src="img/food_1.png" alt="" class="center-block img-responsive" />
+                </div>
+                <div class="capt_for_slider1">
+                    <h3>Приходи в четверг и получи <span class="orange"><large>2&nbsp;шашлыка</large></span> по цене одного!*</h3>
+                    <p>*При условии заказа более чем на 200 грн. на одного человека</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_for_slider1">
+                    <img src="img/food_1.png" alt="" class="center-block img-responsive" />
+                </div>
+                <div class="capt_for_slider1">
+                    <h3>Второй слайд</h3>
+                    <p>Описание второго слайда</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_for_slider1">
+                    <img src="img/food_1.png" alt="" class="center-block img-responsive" />
+                </div>
+                <div class="capt_for_slider1">
+                    <h3>Третий слайд</h3>
+                    <p>Описание третьего слайда</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#carousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </section>
+
+    <!--dishes_x_4 BEGIN-->
+    <section class="dishes_x_4 container container-fluid">
+        <div class="row">
+            <div class="dish col-md-3 col-sm-6">
+                <h4>Название блока</h4>
+                <img src="img/img_food_1.png" alt="" class="img-responsive" />
+                <span>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                </span>
+                <a href="#" class="discription brown bold">Подробнее</a>
+            </div>
+            <div class="dish col-md-3 col-sm-6">
+                <h4>Название блока</h4>
+                <img src="img/img_food_1.png" alt="" class="img-responsive" />
+                <span>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                </span>
+                <a href="#" class="discription brown bold">Подробнее</a>
+            </div>
+            <div class="dish col-md-3 col-sm-6">
+                <h4>Название блока</h4>
+                <img src="img/img_food_1.png" alt="" class="img-responsive" />
+                <span>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                </span>
+                <a href="#" class="discription brown bold">Подробнее</a>
+            </div>
+            <div class="dish col-md-3 col-sm-6">
+                <h4>Название блока</h4>
+                <img src="img/img_food_1.png" alt="" class="img-responsive" />
+                <span>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                </span>
+                <a href="#" class="discription brown bold">Подробнее</a>
+            </div>
+        </div>
+    </section>
+    <section class="dishes_x_4 container container-fluid">
+        <div class="row">
+            <div class="dish col-md-3 col-sm-6">
+                <h4>Название блока</h4>
+                <img src="img/img_food_2.png" alt="" class="img-responsive" />
+                <span>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                </span>
+                <a href="#" class="discription brown bold">Подробнее</a>
+            </div>
+            <div class="dish col-md-3 col-sm-6">
+                <h4>Название блока</h4>
+                <img src="img/img_food_2.png" alt="" class="img-responsive" />
+                <span>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                </span>
+                <a href="#" class="discription brown bold">Подробнее</a>
+            </div>
+            <div class="dish col-md-3 col-sm-6">
+                <h4>Название блока</h4>
+                <img src="img/img_food_2.png" alt="" class="img-responsive" />
+                <span>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                </span>
+                <a href="#" class="discription brown bold">Подробнее</a>
+            </div>
+            <div class="dish col-md-3 col-sm-6">
+                <h4>Название блока</h4>
+                <img src="img/img_food_2.png" alt="" class="img-responsive" />
+                <span>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                </span>
+                <a href="#" class="discription brown bold">Подробнее</a>
+            </div>
+        </div>
+    </section>
+    <!--dishes_x_4 END-->
+
+    <!--dishes_x_4 BEGIN-->
+    <section class="dishes_x_3 container container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_2.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_2.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_2.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dishes_x_3 container container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_3.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_3.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_3.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--dishes_x_3 END-->
+
+    <!--dishes_x_2_left_img BEGIN-->
+
+    <section class="dishes_x_2_left_img container container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_4.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_4.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
         </div>
     </section>
 
-        <script src="libs/jquery/jquery-2.1.4.min.js"></script>
-        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <!--dishes_x_2_left_img END-->
 
-        <script src="js/common.js"></script>
+    <!--dishes_x_2_right_img BEGIN-->
+
+    <section class="dishes_x_2_right_img container container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_4.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_4.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--dishes_x_2_right_img END-->
+
+    <!--dishes_x_1_left_img BEGIN-->
+
+    <section class="dishes_x_1_left_img container container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_6.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget.
+                        Sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla.
+                        Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo.
+                        Eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla.
+                        Sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget.
+                        Elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi.
+                        A felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.
+                        Sem ornare sit amet proin sem sapien, auctor vel faucibus id, aliquet vitae ipsum etiam auctor ultricies ante, at dapibus urna viverra sed nullam mi arcu, tempor vitae interdum a.
+                        Sodales non urna vestibulum dignissim auctor mauris, ac elementum purus fermentum vitae duis placerat laoreet risus, sit amet eleifend tellus lobortis non vivamus iaculis dapibus leo a ornare cras vel.
+                        Sem at felis convallis mollis posuere ultrices dolor sed tellus arcu, accumsan a consectetur sit amet, volutpat eget lorem phasellus quis ipsum orci integer sodales tincidunt nibh a elementum ut.
+                        Ac libero nec orci euismod euismod nec at nulla duis malesuada faucibus porta aliquam nec consequat eros sed porttitor placerat dolor, accumsan imperdiet neque ornare in aenean non elit non.
+                        Leo porta mattis mauris non dolor nunc, id congue odio donec tellus nisl, semper id consectetur vitae, dapibus dictum nisl morbi sed augue purus sed dictum diam convallis tortor interdum.
+                        Volutpat phasellus dapibus arcu sit amet neque vulputate sed elementum orci fringilla in hac habitasse platea dictumst maecenas ut dui diam curabitur adipiscing vestibulum libero, nec varius dui pulvinar eget.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--dishes_x_1_left_img END-->
+
+    <!--dishes_x_1_right_img BEGIN-->
+
+    <section class="dishes_x_1_right_img container container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_6.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget.
+                        Sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla.
+                        Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo.
+                        Eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla.
+                        Sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget.
+                        Elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi.
+                        A felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.
+                        Sem ornare sit amet proin sem sapien, auctor vel faucibus id, aliquet vitae ipsum etiam auctor ultricies ante, at dapibus urna viverra sed nullam mi arcu, tempor vitae interdum a.
+                        Sodales non urna vestibulum dignissim auctor mauris, ac elementum purus fermentum vitae duis placerat laoreet risus, sit amet eleifend tellus lobortis non vivamus iaculis dapibus leo a ornare cras vel.
+                        Sem at felis convallis mollis posuere ultrices dolor sed tellus arcu, accumsan a consectetur sit amet, volutpat eget lorem phasellus quis ipsum orci integer sodales tincidunt nibh a elementum ut.
+                        Ac libero nec orci euismod euismod nec at nulla duis malesuada faucibus porta aliquam nec consequat eros sed porttitor placerat dolor, accumsan imperdiet neque ornare in aenean non elit non.
+                        Leo porta mattis mauris non dolor nunc, id congue odio donec tellus nisl, semper id consectetur vitae, dapibus dictum nisl morbi sed augue purus sed dictum diam convallis tortor interdum.
+                        Volutpat phasellus dapibus arcu sit amet neque vulputate sed elementum orci fringilla in hac habitasse platea dictumst maecenas ut dui diam curabitur adipiscing vestibulum libero, nec varius dui pulvinar eget.
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; aliquam dui neque, varius eu laoreet vel.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--dishes_x_1_right_img END-->
+
+    <!--dishes_video_left BEGIN-->
+
+    <section class="dishes_video_left container container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dish">
+                    <h4>Рецепт приготовления блюда</h4>
+                    <div class="container_video">
+                        <iframe width="430" height="240" src="https://www.youtube.com/embed/0ie97EFQMlc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget.
+                        Sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla.
+                        Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo.
+                        Eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla.
+                        Sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--dishes_video_left END-->
+
+    <!--dishes_video_right BEGIN-->
+
+    <section class="dishes_video_right container container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dish">
+                    <h4>Рецепт приготовления блюда</h4>
+                    <div class="container_video">
+                        <iframe width="430" height="240" src="https://www.youtube.com/embed/m93gvNTldOA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget.
+                        Sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla.
+                        Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo.
+                        Eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla.
+                        Sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--dishes_video_right END-->
+
+    <section>
+        <div class="gallery">
+            <!--<p class="bold text-center">Gallery</p>-->
+            <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1180px; height: 500px; overflow: hidden; visibility: hidden; background-color: transparent">
+                <!-- Loading Screen -->
+                <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                    <div style="position:absolute;display:block;background:url('img/slider/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                </div>
+                <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1180px; height: 500px; overflow: hidden;">
+                    <div data-p="2520" style="display: none;"><img data-u="image" src="img/slider/01.jpg" /><img data-u="thumb" src="img/slider/thumb-01.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/02.jpg" /><img data-u="thumb" src="img/slider/thumb-02.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/03.jpg" /><img data-u="thumb" src="img/slider/thumb-03.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/04.jpg" /><img data-u="thumb" src="img/slider/thumb-04.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/05.jpg" /><img data-u="thumb" src="img/slider/thumb-05.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/06.jpg" /><img data-u="thumb" src="img/slider/thumb-06.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/07.jpg" /><img data-u="thumb" src="img/slider/thumb-07.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/08.jpg" /><img data-u="thumb" src="img/slider/thumb-08.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/09.jpg" /><img data-u="thumb" src="img/slider/thumb-09.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/10.jpg" /><img data-u="thumb" src="img/slider/thumb-10.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/11.jpg" /><img data-u="thumb" src="img/slider/thumb-11.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/12.jpg" /><img data-u="thumb" src="img/slider/thumb-12.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/11.jpg" /><img data-u="thumb" src="img/slider/thumb-11.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/12.jpg" /><img data-u="thumb" src="img/slider/thumb-12.jpg" /></div>
+                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/food_1.jpg" /><img data-u="thumb" src="img/slider/food_1.jpg" /></div>
+                    <a data-u="add" href="http://www.jssor.com/artyomgolubov27/image-gallery.slider" style="display:none">Image Gallery</a><img data-u="add" title="Jssor Slider" style="display:block;position:absolute;top:0;right:0;width:0px;height:0px;" src="" />
+                </div>
+                <!-- Thumbnail Navigator -->
+                <div data-u="thumbnavigator" class="jssort03-80-80" style="position:absolute;left:0px;bottom:0px;width:1180px;height:100px;" data-autocenter="1">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; filter:alpha(opacity=30.0); opacity:0.3;"></div>
+                    <!-- Thumbnail Item Skin Begin -->
+                    <div data-u="slides" style="cursor: default;">
+                        <div data-u="prototype" class="p">
+                            <div class="w">
+                                <div data-u="thumbnailtemplate" class="t"></div>
+                            </div>
+                            <div class="c"></div>
+                        </div>
+                    </div>
+                    <!-- Thumbnail Item Skin End -->
+                </div>
+                <!-- Arrow Navigator --><span data-u="arrowleft" class="jssora01l" style="top:0px;left:8px;width:45px;height:45px;" data-autocenter="2"></span><span data-u="arrowright" class="jssora01r" style="top:0px;right:8px;width:45px;height:45px;" data-autocenter="2"></span>
+            </div>
+            <script>
+                jssor_1_slider_init();
+            </script>
+    </section>
+
+    <section class="gmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5494.618994547702!2d30.737634!3d46.4821837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x32cec313121205a9!2z0JDRhNC40L3QsA!5e0!3m2!1sru!2sua!4v1474249547727" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <!--dishes_x_1_top_img BEGIN-->
+
+    <section class="dishes_x_1_top_img container container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <img src="img/img_food_6.png" alt="" class="img-responsive" />
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget.
+                        Sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla.
+                        Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo.
+                        Eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla.
+                        Sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget.
+                        Elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi.
+                        A felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.
+                        Sem ornare sit amet proin sem sapien, auctor vel faucibus id, aliquet vitae ipsum etiam auctor ultricies ante, at dapibus urna viverra sed nullam mi arcu, tempor vitae interdum a.
+                        Sodales non urna vestibulum dignissim auctor mauris, ac elementum purus fermentum vitae duis placerat laoreet risus, sit amet eleifend tellus lobortis non vivamus iaculis dapibus leo a ornare cras vel.
+                        Sem at felis convallis mollis posuere ultrices dolor sed tellus arcu, accumsan a consectetur sit amet, volutpat eget lorem phasellus quis ipsum orci integer sodales tincidunt nibh a elementum ut.
+                        Ac libero nec orci euismod euismod nec at nulla duis malesuada faucibus porta aliquam nec consequat eros sed porttitor placerat dolor, accumsan imperdiet neque ornare in aenean non elit non.
+                        Leo porta mattis mauris non dolor nunc, id congue odio donec tellus nisl, semper id consectetur vitae, dapibus dictum nisl morbi sed augue purus sed dictum diam convallis tortor interdum.
+                        Volutpat phasellus dapibus arcu sit amet neque vulputate sed elementum orci fringilla in hac habitasse platea dictumst maecenas ut dui diam curabitur adipiscing vestibulum libero, nec varius dui pulvinar eget.
+                    </span>
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--dishes_x_1_top_img END-->
+
+    <!--dishes_x_1_bottom_img BEGIN-->
+
+    <section class="dishes_x_1_bottom_img container container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dish">
+                    <h4>Название блока</h4>
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget.
+                        Sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla.
+                        Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo.
+                        Eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla.
+                        Sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget.
+                        Elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi.
+                        A felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.
+                        Sem ornare sit amet proin sem sapien, auctor vel faucibus id, aliquet vitae ipsum etiam auctor ultricies ante, at dapibus urna viverra sed nullam mi arcu, tempor vitae interdum a.
+                        Sodales non urna vestibulum dignissim auctor mauris, ac elementum purus fermentum vitae duis placerat laoreet risus, sit amet eleifend tellus lobortis non vivamus iaculis dapibus leo a ornare cras vel.
+                        Sem at felis convallis mollis posuere ultrices dolor sed tellus arcu, accumsan a consectetur sit amet, volutpat eget lorem phasellus quis ipsum orci integer sodales tincidunt nibh a elementum ut.
+                        Ac libero nec orci euismod euismod nec at nulla duis malesuada faucibus porta aliquam nec consequat eros sed porttitor placerat dolor, accumsan imperdiet neque ornare in aenean non elit non.
+                        Leo porta mattis mauris non dolor nunc, id congue odio donec tellus nisl, semper id consectetur vitae, dapibus dictum nisl morbi sed augue purus sed dictum diam convallis tortor interdum.
+                        Volutpat phasellus dapibus arcu sit amet neque vulputate sed elementum orci fringilla in hac habitasse platea dictumst maecenas ut dui diam curabitur adipiscing vestibulum libero, nec varius dui pulvinar eget.
+                    </span>
+                    <img src="img/img_food_6.png" alt="" class="img-responsive" />
+                    <a href="#" class="discription brown bold">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--dishes_x_1_bottom_img END-->
+
+    <!--dishes_video_center BEGIN-->
+
+    <section class="dishes_video_center container container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dish">
+                    <h4>Рецепт приготовления блюда</h4>
+                    <div class="container_video">
+                        <iframe width="860" height="480" src="https://www.youtube.com/embed/m93gvNTldOA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <span>
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                        Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget.
+                        Sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla.
+                        Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo.
+                        Eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla.
+                        Sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider2">
+        <div class="brown">Slider 2</div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="brown">Наши контакты</h3>
+                    <div class="footer_phone">
+                        <div class="p18 brown">(050)&nbsp;450-33-34</div>
+                        <div class="p18 brown">(044)&nbsp;450-33-34</div>
+                        <div class="p18 brown">(044)&nbsp;540-44-34</div>
+                    </div>
+                    <div class="footer_email">
+                        <div class="p18 brown">cafe@cafe.com.ua</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="brown">Наши партнеры</h3>
+                    <div class="footer_img">
+                        <img src="/img/brands/Semiramis.png" alt="" />
+                        <img src="/img/brands/tvrandot.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="brown">Доставка еды</h3>
+                    <div class="footer_delivery" >
+                        <p class="p15 brown" id="time_1">Доставка блюд</p>
+                        <p class="p15 brown" id="time_1">осуществляется курьерами</p>
+                        <div class="time">
+                            <span class="p15 brown">с</span>
+                            <span class="p18 orange">9:00</span>
+                            <span class="p15 brown">до</span>
+                            <span class="p18 orange">23:00</span>
+                            <p class="p15 brown">без выходных</p>
+                            <p class="p15 brown">Цену уточняйте у оператора.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="brown">Мы в соц.сетях</h3>
+                    <div class="share">
+                        <a class="social social-vk" href="#"></a>
+                        <a class="social social-fb" href="#"></a>
+                        <a class="social social-tw" href="#"></a>
+                        <a class="social social-google" href="#"></a>
+                        <a class="social social-rss" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--dishes_video_center END-->
+    <script src="js/common.js"></script>
 </body>
 </html>

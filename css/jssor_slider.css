@@ -1,0 +1,114 @@
+﻿        .jssora01l,
+        .jssora01r {
+            display: block;
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            background: url('/img/slider/a02.png') no-repeat;
+            overflow: hidden
+        }
+        
+        .jssora01l {
+            background-position: -8px -38px
+        }
+        
+        .jssora01r {
+            background-position: -68px -38px
+        }
+        
+        .jssora01l:hover {
+            background-position: -128px -38px
+        }
+        
+        .jssora01r:hover {
+            background-position: -188px -38px
+        }
+        
+        .jssora01l.jssora01ldn {
+            background-position: -8px -38px
+        }
+        
+        .jssora01r.jssora01rdn {
+            background-position: -68px -38px
+        }
+        
+        .jssort03-80-80 .p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 80px
+        }
+        
+        .jssort03-80-80 .t {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none
+        }
+        
+        .jssort03-80-80 .w,
+        .jssort03-80-80 .pav:hover .w {
+            position: absolute;
+            width: 78px;
+            height: 78px;
+            border: #fff 1px solid;
+            border-radius: 5px;
+            box-sizing: content-box
+        }
+        
+        .jssort03-80-80 .pdn .w,
+        .jssort03-80-80 .pav .w {
+            border-style: solid;
+            border-radius: 5px;
+        }
+        
+        .jssort03-80-80 .c {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            background-color: #000;
+            border-radius: 5px;
+            border: solid;
+            filter: alpha(opacity=45);
+            opacity: .45;
+            transition: opacity .6s;
+            -moz-transition: opacity .6s;
+            -webkit-transition: opacity .6s;
+            -o-transition: opacity .6s
+        }
+        
+        .jssort03-80-80 .p:hover .c,
+        .jssort03-80-80 .pav .c {
+            filter: alpha(opacity=0);
+            opacity: 0
+        }
+        
+        .jssort03-80-80 .p:hover .c {
+            transition: none;
+            -moz-transition: none;
+            -webkit-transition: none;
+            -o-transition: none
+        }
+        
+        * html .jssort03-80-80 .w {
+            width: 80px;
+            height: 80px
+        }
+
+        /*custom*/
+
+        .w img {
+            border-radius: 5px;
+        }
+
+        #jssor_1 img, #jssor_1 {
+            border: 1px solid;
+            border-color: transparent;
+            border-radius: 5px;
+        }
