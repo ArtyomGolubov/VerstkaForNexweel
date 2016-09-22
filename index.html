@@ -2,7 +2,7 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <title>Restaurant</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/jssor_slider.css"/>
+    <link rel="stylesheet" href="css/jssor_slider.css" />
 
     <script src="libs/jquery/jquery-2.1.4.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
@@ -97,40 +97,77 @@
         </div>-->
         <!-- Collect the nav links, forms, and other content for toggling -->
 
-        <ul class="nav nav-justified nav_main" id="menu">
-            <li class="active"><a href="#">Главная</a></li>
-            <li><a href="#">Меню</a></li>
-            <li><a href="#">Схема&nbsp;заведения</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">О&nbsp;ресторане</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-        <!--</div>
-        </nav>-->
-        <!--<nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
+        <div class="nav_main" id="menu-top">
+            <ul class="nav_main">
+                <li class="active">
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Меню</a>
+                </li>
+                <li>
+                    <a href="#">Схема&nbsp;заведения</a>
+                </li>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+                <li>
+                    <a href="#">О&nbsp;ресторане</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav nav-justified nav_main">
-                        <li class="active"><a href="#">Главная</a></li>
-                        <li><a href="#">Меню</a></li>
-                        <li><a href="#">Схема&nbsp;заведения</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">О&nbsp;ресторане</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>-->
+        </div>
 
+        <div class="" id="menu">
+            <ul class="nav_main">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Главная</a>
+                        <a href="#">Меню</a>
+                        <a href="#">Схема&nbsp;заведения</a>
+                        <a href="#">Новости</a>
+                        <a href="#">О&nbsp;ресторане</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+                <li class="active">
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Меню</a>
+                </li>
+                <li>
+                    <a href="#">Схема&nbsp;заведения</a>
+                </li>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+                <li>
+                    <a href="#">О&nbsp;ресторане</a>
+                </li>
+                <li class="hide_last_li">
+                    <a href="#">Контакты</a>
+                </li>
+
+            </ul>
+            <!--<div class="dropdown nav_main">
+                <button onclick="myFunction()" class="dropbtn"></button>
+                <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Главная</a>
+                        <a href="#">Меню</a>
+                        <a href="#">Схема&nbsp;заведения</a>
+                        <a href="#">Новости</a>
+                        <a href="#">О&nbsp;ресторане</a>
+                        <a href="#">Контакты</a>
+                </div>
+            </div>-->
+            <!--<div class="op-menu act"></div>-->
+
+        </div>
     </header>
 
     <section id="carousel" class="carousel slide">
@@ -146,7 +183,10 @@
                     <img src="img/food_1.png" alt="" class="center-block img-responsive" />
                 </div>
                 <div class="capt_for_slider1">
-                    <h3>Приходи в четверг и получи <span class="orange"><large>2&nbsp;шашлыка</large></span> по цене одного!*</h3>
+                    <h3>
+                        Приходи в четверг и получи
+                        <span class="orange"><large>2&nbsp;шашлыка</large></span> по цене одного!*
+                    </h3>
                     <p>*При условии заказа более чем на 200 грн. на одного человека</p>
                 </div>
             </div>
@@ -260,7 +300,6 @@
         </div>
     </section>
     <!--dishes_x_4 END-->
-
     <!--dishes_x_4 BEGIN-->
     <section class="dishes_x_3 container container-fluid">
         <div class="row">
@@ -341,7 +380,6 @@
         </div>
     </section>
     <!--dishes_x_3 END-->
-
     <!--dishes_x_2_left_img BEGIN-->
 
     <section class="dishes_x_2_left_img container container-fluid">
@@ -376,7 +414,6 @@
     </section>
 
     <!--dishes_x_2_left_img END-->
-
     <!--dishes_x_2_right_img BEGIN-->
 
     <section class="dishes_x_2_right_img container container-fluid">
@@ -411,7 +448,6 @@
     </section>
 
     <!--dishes_x_2_right_img END-->
-
     <!--dishes_x_1_left_img BEGIN-->
 
     <section class="dishes_x_1_left_img container container-fluid">
@@ -444,7 +480,6 @@
     </section>
 
     <!--dishes_x_1_left_img END-->
-
     <!--dishes_x_1_right_img BEGIN-->
 
     <section class="dishes_x_1_right_img container container-fluid">
@@ -478,7 +513,6 @@
     </section>
 
     <!--dishes_x_1_right_img END-->
-
     <!--dishes_video_left BEGIN-->
 
     <section class="dishes_video_left container container-fluid">
@@ -504,7 +538,6 @@
     </section>
 
     <!--dishes_video_left END-->
-
     <!--dishes_video_right BEGIN-->
 
     <section class="dishes_video_right container container-fluid">
@@ -541,22 +574,68 @@
                     <div style="position:absolute;display:block;background:url('img/slider/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
                 </div>
                 <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1180px; height: 500px; overflow: hidden;">
-                    <div data-p="2520" style="display: none;"><img data-u="image" src="img/slider/01.jpg" /><img data-u="thumb" src="img/slider/thumb-01.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/02.jpg" /><img data-u="thumb" src="img/slider/thumb-02.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/03.jpg" /><img data-u="thumb" src="img/slider/thumb-03.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/04.jpg" /><img data-u="thumb" src="img/slider/thumb-04.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/05.jpg" /><img data-u="thumb" src="img/slider/thumb-05.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/06.jpg" /><img data-u="thumb" src="img/slider/thumb-06.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/07.jpg" /><img data-u="thumb" src="img/slider/thumb-07.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/08.jpg" /><img data-u="thumb" src="img/slider/thumb-08.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/09.jpg" /><img data-u="thumb" src="img/slider/thumb-09.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/10.jpg" /><img data-u="thumb" src="img/slider/thumb-10.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/11.jpg" /><img data-u="thumb" src="img/slider/thumb-11.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/12.jpg" /><img data-u="thumb" src="img/slider/thumb-12.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/11.jpg" /><img data-u="thumb" src="img/slider/thumb-11.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/12.jpg" /><img data-u="thumb" src="img/slider/thumb-12.jpg" /></div>
-                    <div data-p="210.00" style="display: none;"><img data-u="image" src="img/slider/food_1.jpg" /><img data-u="thumb" src="img/slider/food_1.jpg" /></div>
-                    <a data-u="add" href="http://www.jssor.com/artyomgolubov27/image-gallery.slider" style="display:none">Image Gallery</a><img data-u="add" title="Jssor Slider" style="display:block;position:absolute;top:0;right:0;width:0px;height:0px;" src="" />
+                    <div data-p="2520" style="display: none;">
+                        <img data-u="image" src="img/slider/01.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-01.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/02.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-02.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/03.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-03.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/04.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-04.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/05.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-05.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/06.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-06.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/07.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-07.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/08.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-08.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/09.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-09.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/10.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-10.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/11.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-11.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/12.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-12.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/11.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-11.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/12.jpg" />
+                        <img data-u="thumb" src="img/slider/thumb-12.jpg" />
+                    </div>
+                    <div data-p="210.00" style="display: none;">
+                        <img data-u="image" src="img/slider/food_1.jpg" />
+                        <img data-u="thumb" src="img/slider/food_1.jpg" />
+                    </div>
+                    <a data-u="add" href="http://www.jssor.com/artyomgolubov27/image-gallery.slider" style="display:none">Image Gallery</a>
+                    <img data-u="add" title="Jssor Slider" style="display:block;position:absolute;top:0;right:0;width:0px;height:0px;" src="" />
                 </div>
                 <!-- Thumbnail Navigator -->
                 <div data-u="thumbnavigator" class="jssort03-80-80" style="position:absolute;left:0px;bottom:0px;width:1180px;height:100px;" data-autocenter="1">
@@ -572,7 +651,9 @@
                     </div>
                     <!-- Thumbnail Item Skin End -->
                 </div>
-                <!-- Arrow Navigator --><span data-u="arrowleft" class="jssora01l" style="top:0px;left:8px;width:45px;height:45px;" data-autocenter="2"></span><span data-u="arrowright" class="jssora01r" style="top:0px;right:8px;width:45px;height:45px;" data-autocenter="2"></span>
+                <!-- Arrow Navigator -->
+                <span data-u="arrowleft" class="jssora01l" style="top:0px;left:8px;width:45px;height:45px;" data-autocenter="2"></span>
+                <span data-u="arrowright" class="jssora01r" style="top:0px;right:8px;width:45px;height:45px;" data-autocenter="2"></span>
             </div>
             <script>
                 jssor_1_slider_init();
@@ -615,7 +696,6 @@
     </section>
 
     <!--dishes_x_1_top_img END-->
-
     <!--dishes_x_1_bottom_img BEGIN-->
 
     <section class="dishes_x_1_bottom_img container container-fluid">
@@ -648,7 +728,6 @@
     </section>
 
     <!--dishes_x_1_bottom_img END-->
-
     <!--dishes_video_center BEGIN-->
 
     <section class="dishes_video_center container container-fluid">
@@ -700,7 +779,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <h3 class="brown">Доставка еды</h3>
-                    <div class="footer_delivery" >
+                    <div class="footer_delivery">
                         <p class="p15 brown" id="time_1">Доставка блюд</p>
                         <p class="p15 brown" id="time_1">осуществляется курьерами</p>
                         <div class="time">
@@ -720,7 +799,7 @@
                         <a class="social social-fb" href="#"></a>
                         <a class="social social-tw" href="#"></a>
                         <a class="social social-google" href="#"></a>
-                        <a class="social social-rss" href="#"></a>
+                        <a class="social social-insta" href="#"></a>
                     </div>
                 </div>
             </div>

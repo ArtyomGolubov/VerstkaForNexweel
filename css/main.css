@@ -6,11 +6,14 @@
     font-family: Roboto-Regular;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 /*HEADER BEGIN*/
 .wrapper {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 0 10px;
 }
 
 .logo {
@@ -93,45 +96,120 @@
 /*NAVBAR BEGIN*/
 
 .nav_main {
+    height: 50px;
     margin: 36px auto;
     border: 1px solid;
     border-radius: 5px;
     border-color: #512c15;
-}
-
-.nav li {
-    color: #fff;
     background: linear-gradient(#7a5e4b, #512c15);
-    border-right: 1px solid;
-    border-color: #fff;
 }
 
-    .nav li:last-child {
-        border: none;
-    }
-
-    .nav li a {
+    .nav_main li {
         color: #fff;
-        margin: 0px 30px 0px 30px;
-        font-family: Roboto-bold;
+        /*background: linear-gradient(#7a5e4b, #512c15);*/
+        border-left: 1px solid;
+        border-color: #fff;
+        float: left;
+        margin: 15px 0 20px 0;
+        list-style: none;
     }
 
-        .nav li a:hover {
-            color: #f89b2f;
-            background-color: transparent;
-            margin: 0px 30px 0px 30px;
+        .nav_main li:first-of-type {
+            border: none;
         }
 
-/**/
-/*.navbar-default {
-    border: none;
-    background-color: transparent;
-    color: transparent;
+        .nav_main li a {
+            color: #fff;
+            margin: 0px 50px 0px 50px;
+            font-family: Roboto-bold;
+            /*text-align: justify;*/
+        }
+
+            .nav_main li a:hover {
+                color: #f89b2f;
+                background-color: transparent;
+            }
+
+#menu-top {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0px;
+    width: 3000px;
+    margin: 0 0 0 -910px;
 }
 
-.navbar-toggle {
-    display:block;
-}*/
+    #menu-top .nav_main {
+        width: 1180px;
+        margin: auto;
+        border: none;
+        height: 48px;
+    }
+
+.op-menu {
+    display: block;
+    float: right;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px !important;
+}
+
+#dd_btn {
+    background: url(/img/icons/op-menu.png) no-repeat center;
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+
+/*    dropdown  menu*/
+.dropbtn {
+    /*background-color: #4CAF50;*/
+    background: url(/img/icons/op-menu.png) no-repeat center;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+    margin: 8px 0 8px 0px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #512c15;
+}
+
+.dropdown {
+    position: relative;
+    width: 50px;
+    float: right;
+    top: 0px;
+    right: 0px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    z-index: 101;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+/*-------------------*/
+
 /*NAVBAR END*/
 
 /*SLIDER-1 BEGIN*/
@@ -276,6 +354,7 @@
 }
 
 .dishes_video_center iframe {
+    float: none;
     margin: 10px auto;
 }
 
@@ -361,67 +440,45 @@ footer {
 
 .social {
     display: inline-block;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     margin-right: 5px;
-    background: #bdc3c7 url("/img/icons/social.png") no-repeat;
     vertical-align: middle;
     border-radius: 5px;
 }
 
-/*.social:hover {
-    background: url("/img/icons/social-color.png");
-}*/
-
 .social-vk {
-    background-color: #6d8fb3;
-    background-position: 0 0;
+    background: url(/img/icons/vk_icon.png);
 }
-
-    .social-vk:hover {
-        background: url("/img/icons/social-color.png");
-        background-position: 0 0;
-    }
 
 .social-fb {
-    background-color: #526da3;
-    background-position: -33px 0;
+    background: url(/img/icons/fb_icon.png);
 }
-
-    .social-fb:hover {
-        background: url("/img/icons/social-color.png");
-        background-position: -33px 0;
-    }
 
 .social-tw {
-    background-color: #73bfe6;
-    background-position: -66px 0;
+    background: url(/img/icons/twitter_icon.png);
 }
-
-    .social-tw:hover {
-        background: url("/img/icons/social-color.png");
-        background-position: -66px 0;
-    }
 
 .social-google {
-    background-color: #73bfe6;
-    background-position: -99px 0;
+    background: url(/img/icons/google_plus_icon.png);
 }
 
-    .social-google:hover {
-        background: url("/img/icons/social-color.png");
-        background-position: -99px 0;
-    }
-
-.social-rss {
-    background-color: #73bfe6;
-    background-position: -132px 0;
+.social-insta {
+    background: url(/img/icons/insta_icon.png);
 }
 
-    .social-rss:hover {
-        background: url("/img/icons/social-color.png");
-        background-position: -132px 0;
-    }
 /*----------*/
 
 /*footer END*/
+
+
+.sticky {
+    position: fixed;
+    z-index: 101;
+    height: 50px;
+}
+
+.stop {
+    position: relative;
+    z-index: 101;
+}
