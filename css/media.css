@@ -32,6 +32,10 @@
     #delivery_2 {
         display: inline-block;
     }
+
+    .dropdown {
+        display: block;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -84,6 +88,10 @@
         left: 0;
         width: 100%;
         height: 100%;
+    }
+
+    .dropdown {
+        display: block;
     }
 }
 

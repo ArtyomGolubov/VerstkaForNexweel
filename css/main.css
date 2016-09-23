@@ -180,32 +180,42 @@ a {
 }
 
 .dropdown {
+    display: none;
     position: relative;
     width: 50px;
     float: right;
     top: 0px;
     right: 0px;
+    z-index: 101;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #512c15;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
-    z-index: 101;
+    /*z-index: 101;*/
+    right: 0px; 
 }
 
 .dropdown-content a {
-    color: black;
+    display: none;
+    color: #f9f9f9;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    border-bottom: 1px solid #7a5e4b;
 }
 
-.dropdown a:hover {background-color: #f1f1f1}
+.dropdown-content a:last-of-type {
+    border: none;
+}
+
+.dropdown a:hover {
+    color: #f89b2f;
+}
 
 .show {display:block;}
 /*-------------------*/
