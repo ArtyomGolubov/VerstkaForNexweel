@@ -45,7 +45,26 @@
                                         <div class="p18 brown">(050)&nbsp;450-33-34</div>
                                         <div class="p18 brown">(044)&nbsp;450-33-34</div>
                                     </div>
-                                    <a href="#" class="p15 orange bold" data-toggle="modal" data-target="#myModal">Перезвоните мне</a>
+                                    <a href="#" class="p18 orange bold" id="callback" onclick="callme()">
+                                        Перезвоните мне
+                                    </a>
+                                    <!-- callMe -->
+                                    <div class="call-form" id="call_me">
+                                        <form action="#" method="post" class="err brown" novalidate="novalidate">
+                                            <div class="inp-block">
+                                                <label for="name">Ваше имя</label>
+                                                <input type="text" name="name" id="name" placeholder="Ваше имя">
+                                            </div>
+                                            <div class="inp-block">
+                                                <label for="phone">Телефон</label>
+                                                <input type="text" name="phone" id="phone" placeholder="+38 (___) ___-__-__" maxlength="19" autocomplete="off">
+                                            </div>
+                                            <input type="hidden" name="call" value="true">
+                                            <button type="submit">Перезвонить</button>
+                                        </form>
+                                    </div>
+                                    
+                                    <!------------>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
@@ -93,6 +112,8 @@
             </div>
         </div>
 
+
+
         <!-- nav menu -->
         <div class="nav_main" id="menu-top">
             <ul class="nav_main">
@@ -121,7 +142,7 @@
         <div class="" id="menu">
             <ul class="nav_main">
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn"></button>
+                    <button onclick="dropdownMenu()" class="dropbtn"></button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="#">Главная</a>
                         <a href="#">Меню</a>

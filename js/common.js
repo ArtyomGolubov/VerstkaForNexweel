@@ -114,7 +114,7 @@ $(window).resize(function () {
 //----- DROPDOWN MENU ------------------
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
+function dropdownMenu() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
@@ -160,4 +160,21 @@ function SizeMenuInit() {
             }
         }
     });
+}
+
+// ------------ call me -----------------------
+function callme() {
+    $('#call_me').toggle();
+    //$('#call_me').toggle(function(){
+    //    $('#call_me').animate({
+    //        height: "150px", 
+    //        padding:"20px 0"
+    //    }, 500);
+    //},
+    //function () {
+    //    $('#call_me').animate({
+    //        height: "0px",
+    //        padding: "0px 0"
+    //    }, 500);
+    //});
 }
