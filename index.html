@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/jssor_slider.css" />
+    <link rel="stylesheet" href="css/slider2/component.css" />
 
     <script src="libs/jquery/jquery-2.1.4.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
@@ -22,6 +23,7 @@
     <!-- TiltedContentSlideshow -->
     <!--<link rel="stylesheet" type="text/css" href="css/TiltedContentSlideshow/normalize.css" />-->
     <link rel="stylesheet" type="text/css" href="css/TiltedContentSlideshow/component.css" />
+    <script src="js/bootstrap/modernizr.custom.js"></script>
     <script src="js/TiltedContentSlideshow/modernizr.custom.js"></script>
 
     <!---------------------------->
@@ -157,7 +159,7 @@
             <ol class="slides">
                 <li class="current">
                     <div class="description brown bold">
-                        <h2>
+                        <h2 class="brown">
                             Приходи в четверг и получи
                             <span class="orange"><large>2&nbsp;шашлыка</large></span> по цене одного!*
                         </h2>
@@ -781,7 +783,54 @@
     </section>
 
     <section class="slider2">
-        <div class="brown">Slider 2</div>
+        <div class="container">
+            <div id="slider2" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <!--<ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>-->
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="slider2_description right">
+                            <p class="slide-text p15 bold">Лучшие мясные блюда от наших французских шеф-поваров</p>
+                            <p class="slide-header orange bold">только у нас!</p>
+                        </div>
+                        <img src="img/food_2.png" alt="">
+                    </div>
+
+                    <div class="item">
+                        <div class="slider2_description left">
+                            <p class="slide-text p15 bold">Лучшие мясные блюда от наших французских шеф-поваров</p>
+                            <p class="slide-header orange bold">только у нас!</p>
+                        </div>
+                        <img src="img/food_2.png" alt="">
+                    </div>
+
+                    <div class="item">
+                        <div class="slider2_description right">
+                            <p class="slide-text p15 bold">Лучшие мясные блюда от наших французских шеф-поваров</p>
+                            <p class="slide-header orange bold">только у нас!</p>
+                        </div>
+                        <img src="img/food_2.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#slider2" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#slider2" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>

@@ -93,6 +93,13 @@
     .dropdown {
         display: block;
     }
+
+    .slider2_description {
+        width: 55%;
+        top: 0px;
+        bottom: 0px;
+        padding: 5%;
+    }
 }
 
 /* Extra Small Devices, Phones */
