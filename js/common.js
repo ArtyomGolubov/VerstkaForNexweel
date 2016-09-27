@@ -2,9 +2,8 @@
 
 
 
-
+(function () {
 //------#menu-top-------------------------
-//(function () {
 var a = document.querySelector('#menu'), b = document.querySelector('#menu-top'), P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
 window.addEventListener('scroll', Ascroll, false);
 document.body.addEventListener('scroll', Ascroll, false);
@@ -36,9 +35,16 @@ function Ascroll() {
         a.children[0].style.width = getComputedStyle(a, '').width
     }, false);
 }
-//})();
 
 $(window).ready(function () {
+    SizeMenuInit();
+    Ascroll();
+    CheckDropdownMenuBtn();
+    ChangeMainMenu();
+});
+
+$(window).bind('orientationchange', function (e) {
+    console.log('orientationchange');
     SizeMenuInit();
     Ascroll();
     CheckDropdownMenuBtn();
@@ -110,28 +116,6 @@ $(window).resize(function () {
     ChangeMainMenu();
 });
 
-
-//----- DROPDOWN MENU ------------------
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function dropdownMenu() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
 //---------------------------------------
 
 function SizeMenuInit() {
@@ -161,6 +145,31 @@ function SizeMenuInit() {
         }
     });
 }
+})();
+
+
+//----- DROPDOWN MENU ------------------
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function dropdownMenu() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
 
 // ------------ call me -----------------------
 $(document).ready(function () { // вся мaгия пoсле зaгрузки стрaницы
@@ -214,3 +223,25 @@ function toggleBounce() {
         marker.setAnimation(google.maps.Animation.BOUNCE);
     }
 }
+
+
+////////------------ menu.html -------------------------------
+$(window).ready(function () {
+    console.log('112');
+    $('.food_item').each(function () {
+        var wb = $(this).find('.work_block');
+        var min = 80;
+        var max = 100;
+        var width = Math.floor(Math.random() * (max - min + 1)) + min;
+        wb.css('width', width + '%');
+
+        min = 10;
+        max = 80;
+        var top = Math.floor(Math.random() * (max - min + 1)) + min;
+        wb.css('top', top + '%');
+
+        //$(this).mouseout(function () {
+        //    $(this).find('.work_block').css('opacity', '1');
+        //})
+    })
+})

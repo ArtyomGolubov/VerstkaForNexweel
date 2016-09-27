@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Restaurant menu</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    <script src="libs/jquery/jquery-2.1.4.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/bootstrap/modernizr.custom.js"></script>
+</head>
+<body>
+    <header class="wrapper">
+        <div>
+            <div class="container container-fluid">
+                <div class="row">
+                    <div class="logo col-lg-3 col-md-3 col-sm-3">
+                        <h1 class="text-hide" style="margin-bottom: -130px; position: absolute;">Ресторан "Кебаб"</h1>
+                        <img class="img-responsive" src="img/logo.png" alt="logo" />
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-6">
+                        <div class="info row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="callback">
+                                    <img src="img/icons/phone.png" />
+                                    <div class="header_text">
+                                        <div class="p18 brown">(050)&nbsp;450-33-34</div>
+                                        <div class="p18 brown">(044)&nbsp;450-33-34</div>
+                                    </div>
+                                    <p class="p15 orange bold" id="callback">
+                                        Перезвоните мне
+                                    </p>
+                                    <div id="overlay"></div><!-- Пoдлoжкa -->
+                                    <!-- callMe -->
+                                    <div id="call_me">
+                                        <form action="#" method="post" class="err brown" novalidate="novalidate">
+                                            <div class="inp-block">
+                                                <label for="name">Ваше имя</label>
+                                                <input type="text" name="name" id="name" placeholder="Ваше имя">
+                                            </div>
+                                            <div class="inp-block">
+                                                <label for="phone">Ваш номер телефона</label>
+                                                <input type="text" name="phone" id="phone" placeholder="+38 (___) ___-__-__" maxlength="19" autocomplete="off">
+                                            </div>
+                                            <input type="hidden" name="call" value="true">
+                                            <button type="submit">Перезвонить</button>
+                                        </form>
+                                    </div>
+
+                                    <!------------>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="opening_hours">
+                                    <img src="img/icons/clock.png" />
+                                    <div class="header_text">
+                                        <p class="p15 brown">Время работы</p>
+                                        <div class="time">
+                                            <span class="p15 brown">с</span>
+                                            <span class="p18 orange">9:00</span>
+                                            <span class="p15 brown">до</span>
+                                            <span class="p18 orange">23:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="delivery">
+                                    <img src="img/icons/track.png" />
+                                    <div class="header_text" id="delivery_1">
+                                        <p class="p15 brown" id="time_1">Доставка блюд</p>
+                                        <div class="time">
+                                            <span class="p15 brown">с</span>
+                                            <span class="p18 orange">9:00</span>
+                                            <span class="p15 brown">до</span>
+                                            <span class="p18 orange">23:00</span>
+                                            <p class="p15 brown">(без выходных)</p>
+                                        </div>
+                                    </div>
+                                    <div class="header_text" id="delivery_2">
+                                        <span class="p15 brown" id="time_1">Доставка блюд</span>
+                                        <span class="p15 brown">с</span>
+                                        <span class="p18 orange">9:00</span>
+                                        <span class="p15 brown">до</span>
+                                        <span class="p18 orange">23:00</span>
+                                        <p class="p15 brown">(без выходных)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="col-lg-2 col-md-2 col-sm-3">
+                            <div class="user_block">
+                                <img src="img/icons/user.png" />
+                                <a class="p14 brown bold">Войти</a>/
+                                <a class="p14 brown bold">Регистрация</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- nav menu -->
+        <div class="nav_main" id="menu-top">
+            <ul class="nav_main">
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Меню</a>
+                </li>
+                <li>
+                    <a href="#">Схема заведения</a>
+                </li>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+                <li>
+                    <a href="#">О ресторане</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="" id="menu">
+            <ul class="nav_main">
+                <div class="dropdown">
+                    <button onclick="dropdownMenu()" class="dropbtn"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Главная</a>
+                        <a href="#">Меню</a>
+                        <a href="#">Схема заведения</a>
+                        <a href="#">Новости</a>
+                        <a href="#">О ресторане</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Меню</a>
+                </li>
+                <li>
+                    <a href="#">Схема заведения</a>
+                </li>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+                <li>
+                    <a href="#">О ресторане</a>
+                </li>
+                <li class="hide_last_li">
+                    <a href="#">Контакты</a>
+                </li>
+                <!--&nbsp;-->
+            </ul>
+        </div>
+    </header>
+
+    <h3 class="header_menu"><a href="#" class="brown">Узбекская кухня</a></h3>
+    <div class="container" id="food">
+        <div class="food_list">
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Макароны</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img1.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Хлебо-булочные изделия</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img2.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Манты</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img3.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Лагман</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img4.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Пюрешка</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img5.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Пюрешка</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img6.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Пюрешка</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img7.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Пюрешка</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img8.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Шашлык</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img9.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Харчо</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img10.png" alt="Alternate Text" />
+            </div>
+        </div>
+    </div>
+    <hr/>
+
+    <h3 class="header_menu"><a href="#" class="brown">Украинская кухня</a></h3>
+    <div class="container" id="food">
+        <div class="food_list">
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Макароны</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img1.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Хлебо-булочные изделия</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img2.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Манты</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img3.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Лагман</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img4.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Пюрешка</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img5.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Пюрешка</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img6.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Пюрешка</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img7.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Пюрешка</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img8.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Шашлык</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img9.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="info">
+                        <h4>Харчо</h4>
+                    </div>
+                </div>
+                <img class="img-responsive" src="/img/food_menu/img10.png" alt="Alternate Text" />
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="brown">Наши контакты</h3>
+                    <div class="footer_phone">
+                        <div class="p18 brown">(050)&nbsp;450-33-34</div>
+                        <div class="p18 brown">(044)&nbsp;450-33-34</div>
+                        <div class="p18 brown">(044)&nbsp;540-44-34</div>
+                    </div>
+                    <div class="footer_email">
+                        <div class="p18 brown">cafe@cafe.com.ua</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="brown">Наши партнеры</h3>
+                    <div class="footer_img">
+                        <img src="/img/brands/Semiramis.png" alt="" />
+                        <img src="/img/brands/tvrandot.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="brown">Доставка еды</h3>
+                    <div class="footer_delivery">
+                        <p class="p15 brown" id="time_1">Доставка блюд</p>
+                        <p class="p15 brown" id="time_1">осуществляется курьерами</p>
+                        <div class="time">
+                            <span class="p15 brown">с</span>
+                            <span class="p18 orange">9:00</span>
+                            <span class="p15 brown">до</span>
+                            <span class="p18 orange">23:00</span>
+                            <p class="p15 brown">без выходных</p>
+                            <p class="p15 brown">Цену уточняйте у оператора.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="brown">Мы в соц.сетях</h3>
+                    <div class="share">
+                        <a class="social social-vk" href="#"></a>
+                        <a class="social social-fb" href="#"></a>
+                        <a class="social social-tw" href="#"></a>
+                        <a class="social social-google" href="#"></a>
+                        <a class="social social-insta" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/common.js"></script>
+</body>
+</html>
