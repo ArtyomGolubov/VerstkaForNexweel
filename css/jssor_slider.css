@@ -53,28 +53,29 @@
         .jssort03-80-80 .w,
         .jssort03-80-80 .pav:hover .w {
             position: absolute;
-            width: 78px;
-            height: 78px;
-            border: #fff 1px solid;
+            width: 80px;
+            height: 80px;
+            /*border: #fff 1px solid;*/
             border-radius: 5px;
-            box-sizing: content-box
+            /*box-sizing: content-box*/
         }
         
         .jssort03-80-80 .pdn .w,
         .jssort03-80-80 .pav .w {
             border-style: solid;
             border-radius: 5px;
+            border-color: transparent;
         }
         
         .jssort03-80-80 .c {
             position: absolute;
             top: 0;
             left: 0;
-            width: 80px;
-            height: 80px;
+            width: 79px;
+            height: 79px;
             background-color: #000;
             border-radius: 5px;
-            border: solid;
+            /*border: solid;*/
             filter: alpha(opacity=45);
             opacity: .45;
             transition: opacity .6s;

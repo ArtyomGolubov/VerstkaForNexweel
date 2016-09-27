@@ -33,23 +33,25 @@
         <div>
             <div class="container container-fluid">
                 <div class="row">
-                    <div class="logo col-md-2 col-sm-3">
+                    <div class="logo col-lg-3 col-md-3 col-sm-3">
                         <h1 class="text-hide" style="margin-bottom: -130px; position: absolute;">Ресторан "Кебаб"</h1>
                         <img class="img-responsive" src="img/logo.png" alt="logo" />
                     </div>
-                    <div class="col-md-7 col-sm-6">
+                    <div class="col-lg-7 col-md-7 col-sm-6">
                         <div class="info row">
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="callback">
+                                    <img src="img/icons/phone.png"/>
                                     <div class="header_text">
                                         <div class="p18 brown">(050)&nbsp;450-33-34</div>
                                         <div class="p18 brown">(044)&nbsp;450-33-34</div>
                                     </div>
-                                    <a href="#" class="p18 orange bold" id="callback" onclick="callme()">
+                                    <p class="p15 orange bold" id="callback">
                                         Перезвоните мне
-                                    </a>
+                                    </p>
+                                    <div id="overlay"></div><!-- Пoдлoжкa -->
                                     <!-- callMe -->
-                                    <div class="call-form" id="call_me">
+                                    <div id="call_me">
                                         <form action="#" method="post" class="err brown" novalidate="novalidate">
                                             <div class="inp-block">
                                                 <label for="name">Ваше имя</label>
@@ -69,6 +71,7 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="opening_hours">
+                                    <img src="img/icons/clock.png" />
                                     <div class="header_text">
                                         <p class="p15 brown">Время работы</p>
                                         <div class="time">
@@ -82,6 +85,7 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12">
                                 <div class="delivery">
+                                    <img src="img/icons/track.png" />
                                     <div class="header_text" id="delivery_1">
                                         <p class="p15 brown" id="time_1">Доставка блюд</p>
                                         <div class="time">
@@ -104,9 +108,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="user_block col-sm-2">
-                        <a class="p15 brown bold">Войти</a>/
-                        <a class="p15 brown bold">Регистрация</a>
+                    <div class="info">
+                        <div class="col-lg-2 col-md-2 col-sm-3">
+                            <div class="user_block">
+                                <img src="img/icons/user.png" />
+                                <a class="p14 brown bold">Войти</a>/
+                                <a class="p14 brown bold">Регистрация</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,7 +126,7 @@
         <!-- nav menu -->
         <div class="nav_main" id="menu-top">
             <ul class="nav_main">
-                <li class="active">
+                <li>
                     <a href="#">Главная</a>
                 </li>
                 <li>
@@ -152,7 +161,7 @@
                         <a href="#">Контакты</a>
                     </div>
                 </div>
-                <li class="active">
+                <li>
                     <a href="#">Главная</a>
                 </li>
                 <li>
@@ -174,10 +183,15 @@
             </ul>
         </div>
     </header>
-
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12"></div>
+        </div>
+    </div>
     <!-- TiltedContentSlideshow -->
         <div class="slideshow" id="slideshow">
-            <ol class="slides">
+            <ol class="slides" id="TiltedContentSlideshow">
                 <li class="current">
                     <div class="description brown bold">
                         <h2 class="brown">
@@ -273,7 +287,7 @@
     <section class="dishes_x_4 container container-fluid">
         <div class="row">
             <div class="dish col-md-3 col-sm-6">
-                <h4>Название блока</h4>
+                <h4><a>Название блока</a></h4>
                 <img src="img/img_food_1.png" alt="" class="img-responsive" />
                 <span>
                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -282,7 +296,7 @@
                 <a href="#" class="discription brown bold">Подробнее</a>
             </div>
             <div class="dish col-md-3 col-sm-6">
-                <h4>Название блока</h4>
+                <h4><a>Название блока</a></h4>
                 <img src="img/img_food_1.png" alt="" class="img-responsive" />
                 <span>
                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -291,7 +305,7 @@
                 <a href="#" class="discription brown bold">Подробнее</a>
             </div>
             <div class="dish col-md-3 col-sm-6">
-                <h4>Название блока</h4>
+                <h4><a>Название блока</a></h4>
                 <img src="img/img_food_1.png" alt="" class="img-responsive" />
                 <span>
                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -300,7 +314,7 @@
                 <a href="#" class="discription brown bold">Подробнее</a>
             </div>
             <div class="dish col-md-3 col-sm-6">
-                <h4>Название блока</h4>
+                <h4><a>Название блока</a></h4>
                 <img src="img/img_food_1.png" alt="" class="img-responsive" />
                 <span>
                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -313,7 +327,7 @@
     <section class="dishes_x_4 container container-fluid">
         <div class="row">
             <div class="dish col-md-3 col-sm-6">
-                <h4>Название блока</h4>
+                <h4><a>Название блока</a></h4>
                 <img src="img/img_food_2.png" alt="" class="img-responsive" />
                 <span>
                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -322,7 +336,7 @@
                 <a href="#" class="discription brown bold">Подробнее</a>
             </div>
             <div class="dish col-md-3 col-sm-6">
-                <h4>Название блока</h4>
+                <h4><a>Название блока</a></h4>
                 <img src="img/img_food_2.png" alt="" class="img-responsive" />
                 <span>
                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -331,7 +345,7 @@
                 <a href="#" class="discription brown bold">Подробнее</a>
             </div>
             <div class="dish col-md-3 col-sm-6">
-                <h4>Название блока</h4>
+                <h4><a>Название блока</a></h4>
                 <img src="img/img_food_2.png" alt="" class="img-responsive" />
                 <span>
                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -340,7 +354,7 @@
                 <a href="#" class="discription brown bold">Подробнее</a>
             </div>
             <div class="dish col-md-3 col-sm-6">
-                <h4>Название блока</h4>
+                <h4><a>Название блока</a></h4>
                 <img src="img/img_food_2.png" alt="" class="img-responsive" />
                 <span>
                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -356,7 +370,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-4">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_2.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -367,7 +381,7 @@
             </div>
             <div class="col-md-4 col-sm-4">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_2.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -379,7 +393,7 @@
             </div>
             <div class="col-md-4 col-sm-4">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_2.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -395,7 +409,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-4">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_3.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -407,7 +421,7 @@
             </div>
             <div class="col-md-4 col-sm-4">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_3.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -418,7 +432,7 @@
             </div>
             <div class="col-md-4 col-sm-4">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_3.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -437,7 +451,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_4.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -450,7 +464,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_4.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -471,7 +485,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_4.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -484,7 +498,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_4.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -501,11 +515,11 @@
     <!--dishes_x_2_right_img END-->
     <!--dishes_x_1_left_img BEGIN-->
 
-    <section class="dishes_x_1_left_img container container-fluid">
+    <section class="dishes_x_1_left_img  container container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_6.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -537,7 +551,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_6.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -561,7 +575,7 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
     <!--dishes_x_1_right_img END-->
     <!--dishes_video_left BEGIN-->
@@ -570,9 +584,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="dish">
-                    <h4>Рецепт приготовления блюда</h4>
+                    <h4><a>Рецепт приготовления блюда</a></h4>
                     <div class="container_video">
-                        <iframe width="430" height="240" src="https://www.youtube.com/embed/0ie97EFQMlc" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="445" height="250" src="https://www.youtube.com/embed/0ie97EFQMlc" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -595,9 +609,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="dish">
-                    <h4>Рецепт приготовления блюда</h4>
+                    <h4><a>Рецепт приготовления блюда</a></h4>
                     <div class="container_video">
-                        <iframe width="430" height="240" src="https://www.youtube.com/embed/m93gvNTldOA" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="445" height="250" src="https://www.youtube.com/embed/m93gvNTldOA" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -615,8 +629,7 @@
 
     <!--dishes_video_right END-->
 
-    <section>
-        <div class="gallery">
+    <section class="gallery">
             <!--<p class="bold text-center">Gallery</p>-->
             <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1180px; height: 500px; overflow: hidden; visibility: hidden; background-color: transparent">
                 <!-- Loading Screen -->
@@ -711,9 +724,10 @@
             </script>
     </section>
 
-    <section class="gmap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5494.618994547702!2d30.737634!3d46.4821837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x32cec313121205a9!2z0JDRhNC40L3QsA!5e0!3m2!1sru!2sua!4v1474249547727" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <section id="gmap">
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5494.618994547702!2d30.737634!3d46.4821837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x32cec313121205a9!2z0JDRhNC40L3QsA!5e0!3m2!1sru!2sua!4v1474249547727" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
     </section>
+
 
     <!--dishes_x_1_top_img BEGIN-->
 
@@ -721,7 +735,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <img src="img/img_food_6.png" alt="" class="img-responsive" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -749,11 +763,11 @@
     <!--dishes_x_1_top_img END-->
     <!--dishes_x_1_bottom_img BEGIN-->
 
-    <section class="dishes_x_1_bottom_img container container-fluid">
+    <section class="dishes_x_1_bottom_img  container container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="dish">
-                    <h4>Название блока</h4>
+                    <h4><a>Название блока</a></h4>
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                         Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -785,9 +799,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="dish">
-                    <h4>Рецепт приготовления блюда</h4>
+                    <h4><a>Рецепт приготовления блюда</a></h4>
                     <div class="container_video">
-                        <iframe width="860" height="480" src="https://www.youtube.com/embed/m93gvNTldOA" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="1180" height="665" src="https://www.youtube.com/embed/m93gvNTldOA" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
@@ -906,5 +920,8 @@
 
     <!--dishes_video_center END-->
     <script src="js/common.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTFFbncVHGccafJakh0f7RE3S109fWm9w&signed_in=true&callback=initMap">
+    </script>
 </body>
 </html>
