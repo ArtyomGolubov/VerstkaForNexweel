@@ -153,6 +153,13 @@ function SizeMenuInit() {
 toggle between hiding and showing the dropdown content */
 function dropdownMenu() {
     document.getElementById("myDropdown").classList.toggle("show");
+    if ($('#myDropdown').is('.show')) {
+        console.log('border');
+        $('.nav_main').css('border-radius', '5px 5px 0 5px');
+    }
+    else {
+        $('.nav_main').css('border-radius', '5px');
+    }
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -167,6 +174,7 @@ window.onclick = function (event) {
                 openDropdown.classList.remove('show');
             }
         }
+        $('.nav_main').css('border-radius', '5px');
     }
 }
 
@@ -176,20 +184,20 @@ $(document).ready(function () { // вся мaгия пoсле зaгрузки с
     console.log('callme');
     $('#callback').click(function (event) { // лoвим клик пo ссылки с id="go"
         event.preventDefault(); // выключaем стaндaртную рoль элементa
-        $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+        $('#overlay').fadeIn(200, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
 		 	function () { // пoсле выпoлнения предъидущей aнимaции
 		 	    $('#call_me')
 					.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
-					.animate({ opacity: 1, top: '50%' }, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+					.animate({ opacity: 1 }, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
 		 	});
     });
     /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
     $('#overlay').click(function () { // лoвим клик пo крестику или пoдлoжке
         $('#call_me')
-			.animate({ opacity: 0, top: '45%' }, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+			.animate({ opacity: 0 }, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
 				function () { // пoсле aнимaции
 				    $(this).css('display', 'none'); // делaем ему display: none;
-				    $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+				    $('#overlay').fadeOut(200); // скрывaем пoдлoжку
 				}
 			);
     });
@@ -245,3 +253,18 @@ $(window).ready(function () {
         //})
     })
 })
+
+$(function () {
+    $(window).ready( function() {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+        $('#toTop').click(function () {
+            $('body,html').animate({ scrollTop: 0 }, 800);
+        });
+    });
+});

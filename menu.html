@@ -16,7 +16,7 @@
     <script src="libs/jquery/jquery-2.1.4.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="js/bootstrap/modernizr.custom.js"></script>
+    <script src="js/TiltedContentSlideshow/modernizr.custom.js"></script>
 </head>
 <body>
     <header class="wrapper">
@@ -117,10 +117,10 @@
         <div class="nav_main" id="menu-top">
             <ul class="nav_main">
                 <li>
-                    <a href="#">Главная</a>
+                    <a href="index.html">Главная</a>
                 </li>
                 <li>
-                    <a href="#">Меню</a>
+                    <a href="menu.html">Меню</a>
                 </li>
                 <li>
                     <a href="#">Схема заведения</a>
@@ -143,8 +143,8 @@
                 <div class="dropdown">
                     <button onclick="dropdownMenu()" class="dropbtn"></button>
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Главная</a>
-                        <a href="#">Меню</a>
+                        <a href="index.html">Главная</a>
+                        <a href="menu.html">Меню</a>
                         <a href="#">Схема заведения</a>
                         <a href="#">Новости</a>
                         <a href="#">О ресторане</a>
@@ -152,10 +152,10 @@
                     </div>
                 </div>
                 <li>
-                    <a href="#">Главная</a>
+                    <a href="index.html">Главная</a>
                 </li>
                 <li>
-                    <a href="#">Меню</a>
+                    <a href="menu.html">Меню</a>
                 </li>
                 <li>
                     <a href="#">Схема заведения</a>
@@ -174,12 +174,17 @@
         </div>
     </header>
 
+    <ol class="breadcrumb breadcrumb1 p15">
+        <li><a href="index.html">Главная</a></li>
+        <li class="active">Меню</li>
+    </ol>
+
     <h3 class="header_menu"><a href="#" class="brown">Узбекская кухня</a></h3>
     <div class="container" id="food">
         <div class="food_list">
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Макароны</h4>
                     </div>
                 </div>
@@ -187,7 +192,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Хлебо-булочные изделия</h4>
                     </div>
                 </div>
@@ -195,7 +200,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Манты</h4>
                     </div>
                 </div>
@@ -203,7 +208,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Лагман</h4>
                     </div>
                 </div>
@@ -211,7 +216,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Пюрешка</h4>
                     </div>
                 </div>
@@ -219,7 +224,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Пюрешка</h4>
                     </div>
                 </div>
@@ -227,7 +232,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Пюрешка</h4>
                     </div>
                 </div>
@@ -235,7 +240,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Пюрешка</h4>
                     </div>
                 </div>
@@ -243,7 +248,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Шашлык</h4>
                     </div>
                 </div>
@@ -251,7 +256,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Харчо</h4>
                     </div>
                 </div>
@@ -266,7 +271,7 @@
         <div class="food_list">
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Макароны</h4>
                     </div>
                 </div>
@@ -274,7 +279,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Хлебо-булочные изделия</h4>
                     </div>
                 </div>
@@ -282,7 +287,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Манты</h4>
                     </div>
                 </div>
@@ -290,7 +295,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Лагман</h4>
                     </div>
                 </div>
@@ -298,7 +303,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Пюрешка</h4>
                     </div>
                 </div>
@@ -306,7 +311,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Пюрешка</h4>
                     </div>
                 </div>
@@ -314,7 +319,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Пюрешка</h4>
                     </div>
                 </div>
@@ -322,7 +327,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Пюрешка</h4>
                     </div>
                 </div>
@@ -330,7 +335,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Шашлык</h4>
                     </div>
                 </div>
@@ -338,7 +343,7 @@
             </div>
             <div class="food_item">
                 <div class="work_block">
-                    <div class="info">
+                    <div class="food_info">
                         <h4>Харчо</h4>
                     </div>
                 </div>
@@ -397,6 +402,9 @@
             </div>
         </div>
     </footer>
+
+    <a href="#" title="Вернуться к началу" id="toTop"><img src="img/icons/up_button.png" alt="Alternate Text" /></a>
+
     <script src="js/common.js"></script>
 </body>
 </html>
