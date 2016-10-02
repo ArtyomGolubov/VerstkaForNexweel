@@ -1,0 +1,109 @@
+﻿.inner_dish {
+
+}
+
+.inner_dish img {
+    border-radius: 5px;
+}
+
+.inner_dish h3 {
+    color: #512c15;
+    font-family: Roboto-Bold;
+}
+
+.adds {
+    margin: 20px 10px;
+}
+
+.adds .input-group{
+    width: 100px;
+    display: inline-table;
+    margin-left: 10px;
+}
+
+.adds input {
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+    box-shadow: none;
+}
+
+.adds li {
+    list-style: none;
+    justify-content: center;
+}
+
+.adds li>div {
+    display: flex;
+}
+
+.adds li>div>span {
+    align-self: center;
+    width: 140px;
+}
+
+.adds .btn-default {
+    border: none;
+    border-radius: 5px  !important;
+    background: linear-gradient(#f89b2e, #e8701b);
+    font-family: Roboto-Bold;
+    font-size: 21px;
+    color: #fff;
+    margin: 0;
+    padding: 0px;
+    height: 25px;
+    width: 25px;
+    line-height: 10px;
+}
+
+    .adds .btn-default:active {
+        background: linear-gradient(#e8701b, #f89b2e);
+        color: #fff;
+    }
+
+#dish_description {
+    margin-bottom: 20px;
+}
+
+#buy_block {
+     float: right;
+}
+
+.price {
+    padding: 7.5px;
+    background-color: #eeeee3;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-position-x: 10px;
+    position: absolute;
+    height: 2.3em;
+    right: 95px;
+    display: flex;
+}
+
+.price_value {
+    font-size: 25px;
+    align-self: center;
+}
+
+.price_currency {
+    align-self: flex-end;
+}
+
+.price_value, .price_currency {
+    float: right; 
+    margin: 2px;
+}
+
+#buy_block .btn-default {
+    border: none;
+    border-radius: 5px  !important;
+    background: linear-gradient(#f89b2e, #e8701b);
+    font-family: Roboto-Regular;
+    color: #fff;
+    position: relative;
+}
+    #buy_block .btn-default:active {
+        background: linear-gradient(#e8701b, #f89b2e);
+        color: #fff;
+    }
