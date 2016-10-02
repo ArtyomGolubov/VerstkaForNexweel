@@ -5,32 +5,34 @@
             width: 45px;
             height: 45px;
             cursor: pointer;
-            background: url('/img/slider/a01.png') no-repeat;
+            /*background: url('/img/slider/a01.png') no-repeat;*/
             overflow: hidden
         }
         
         .jssora01l {
-            background-position: -8px -38px
+            /*background-position: -8px -38px*/
+            background: url('/img/icons/strelka_vlevo.png') no-repeat;
         }
         
         .jssora01r {
-            background-position: -68px -38px
+            /*background-position: -68px -38px*/
+            background: url('/img//icons/strelka_vpravo.png') no-repeat;
         }
         
         .jssora01l:hover {
-            background-position: -128px -38px
+            /*background-position: -128px -38px*/
         }
         
         .jssora01r:hover {
-            background-position: -188px -38px
+            /*background-position: -188px -38px*/
         }
         
         .jssora01l.jssora01ldn {
-            background-position: -8px -38px
+            /*background-position: -8px -38px*/
         }
         
         .jssora01r.jssora01rdn {
-            background-position: -68px -38px
+            /*background-position: -68px -38px*/
         }
         
         .jssort03-80-80 .p {
@@ -73,7 +75,7 @@
             left: 0;
             width: 79px;
             height: 79px;
-            background-color: #000;
+            /*background-color: #000;*/
             border-radius: 5px;
             /*border: solid;*/
             filter: alpha(opacity=45);
@@ -108,8 +110,10 @@
             border-radius: 5px;
         }
 
-        #jssor_1 img, #jssor_1 {
-            border: 1px solid;
-            border-color: transparent;
+        #jssor_1 img, #jssor_1,
+         jssort03-80-80, jssort03-80-80>div {
+            /*border: 1px solid;*/
+            /*border-color: transparent;*/
             border-radius: 5px;
+            overflow: hidden !important;
         }

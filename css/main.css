@@ -553,6 +553,16 @@
 
 /* SLIDER 2*/
 
+.carousel, .slide,
+.carousel .carousel-inner,
+.carousel .item,
+.carousel .item img,
+
+#jssor_1 img, #jssor_1 {
+  border-radius: 5px !important;
+  overflow: hidden !important;
+}
+
 #slider2 .carousel-control {
     margin: auto;
     text-shadow: none;
