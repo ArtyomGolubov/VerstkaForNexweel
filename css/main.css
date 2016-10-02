@@ -6,26 +6,10 @@
     font-family: Roboto-Regular;
 }
 
-/*a {
-    text-decoration: none !important;
-}*/
-
-/* BOOTSTRAP */
-/*.container {
-    max-width: 1180px;
-    margin: auto;
-    padding: 0;
-}*/
-/*  -------  */
-
 /*HEADER BEGIN*/
 .wrapper {
     max-width: 1180px;
     margin: 0 auto;
-}
-
-.logo {
-    margin: 20px 0px 0px 0px;
 }
 
 .p18 {
@@ -61,38 +45,87 @@
     color: #f99b30;
 }
 
-.header_text {
-}
-
-/*.time {
-    display:inline-block;
-    margin: -10px 0;
-}*/
-
-.callback {
-    margin-top: 30px;
-}
-
-.info img {
-    display: block;
+/*    ---- .head ------ */
+.callback, .opening_hours, .delivery {
     float: left;
-    clear: both;
-    margin: 0 15px 50px 0;
-}
-
-.callback div > div:last-child {
-    margin: -8px 0;
 }
 
 .callback p {
     cursor: pointer;
-    margin: 10px 0;
     text-decoration: underline;
 }
 
     .callback p:hover {
         color: #59341d;
     }
+
+.head {
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+    .head p, footer p {
+        margin: 0;
+    }
+
+.head_info_item {
+    margin-bottom: 20px;
+}
+
+#head_info svg {
+    margin-right: 5px;
+}
+
+.head_item {
+    display: inline-block;
+    height: 100%;
+    top: 0px;
+}
+
+#head_info {
+    display: inline-block;
+    height: 100%;
+    margin: 0px 0 20px 40px;
+}
+
+#user_block {
+    position: absolute;
+    right: 0px;
+}
+
+.user_block {
+    padding: 15px;
+    border: 1px solid #ecece0;
+    border-radius: 5px;
+}
+
+    .user_block a {
+        text-decoration: underline;
+        white-space: nowrap;
+    }
+
+        .user_block a:hover {
+            color: #f89b2f;
+            cursor: pointer;
+        }
+
+.head_icon, .user_icon {
+     float: left;
+}
+
+#delivery_1 {
+    display: inline-block;
+}
+
+#delivery_2 {
+    display: none;
+}
+
+#logo {
+    float: left;
+}
 
 /* Пoдлoжкa */
 #overlay {
@@ -110,54 +143,6 @@
     display: none; /* в oбычнoм сoстoянии её нет) */
 }
 
-
-.opening_hours {
-    /*background-image: url(../img/icons/clock.png);
-    background-repeat: no-repeat;
-    padding-left: 30px;*/
-    margin-top: 30px;
-}
-
-    .opening_hours div > div {
-        margin: -13px 0;
-    }
-
-.delivery {
-    /*background-image: url(../img/icons/track.png);
-    background-repeat: no-repeat;
-    padding-left: 35px;*/
-    margin-top: 30px;
-}
-
-    .delivery div > div {
-        margin: -13px 0;
-    }
-
-.user_block {
-    /*background-image: url(../img/icons/user.png);
-    background-repeat: no-repeat;
-    padding-left: 35px;*/
-    margin-left: -50px;
-    margin-top: 15px;
-    padding: 15px;
-    float: right;
-    border: 1px solid #ecece0;
-    border-radius: 5px;
-}
-
-    .user_block img {
-        margin-bottom: 0px;
-    }
-
-    .user_block a {
-        text-decoration: underline;
-    }
-
-    .user_block a:hover {
-        color: #f89b2f;
-        cursor: pointer;
-    }
-
 /*HEADER END*/
 
 /*NAVBAR BEGIN*/
@@ -174,16 +159,13 @@
 
     .nav_main li {
         color: #fff;
-        /*background: linear-gradient(#7a5e4b, #512c15);*/
         border-left: 1px solid;
         border-color: #887567;
         float: left;
-        /*margin: 15px 0 20px 0;*/
         list-style: none;
         width: 180px;
         height: 50px;
         text-align: center;
-        /*margin: auto;*/
         justify-content: center;
         display: flex;
     }
@@ -194,11 +176,9 @@
 
         .nav_main li a {
             color: #fff;
-            /*margin: 0px 50px 0px 50px;*/
             font-family: Roboto-Regular;
             font-size: 15px;
             text-decoration: none;
-            /*text-align: justify;*/
             align-self: center;
         }
 
@@ -228,7 +208,6 @@
     float: right;
     height: 50px;
     width: 50px;
-    /*margin-bottom: 20px !important;*/
 }
 
 #dd_btn {
@@ -245,14 +224,12 @@
     display: none;
     position: relative;
     width: 50px;
-    /*float: right;*/
     top: -10px;
     left: 150px;
     z-index: 101;
 }
 
     #call_me form {
-        /*display: none;*/
         position: absolute;
         overflow: auto;
         box-shadow: 5px 8px 16px 0px rgba(0,0,0,0.2);
@@ -262,7 +239,6 @@
         width: 200px;
         padding: 10px;
         background: #ecece0;
-        /*border: 1px solid #f99b30;*/
         border-radius: 5px;
         font-family: Roboto-Regular;
         font-size: 14px;
@@ -276,8 +252,6 @@
         width: 170px;
         padding: 8px;
         border-radius: 5px;
-        /*border-color: #f99b30;*/
-        /*background: linear-gradient(#7a5e4b, #512c15);*/
         background: linear-gradient(#f89b2e, #e8701b);
         border: none;
         outline: 0;
@@ -426,10 +400,6 @@
 
 
 /*dishes BEGIN*/
-
-/*.dishes_x_4 {
-    height: 250px; //на планшетах и ниже ломается адаптивность 
-}*/
 
 .dishes_img_left_x_4 img {
     width: 110px;
@@ -630,20 +600,9 @@ footer {
     margin: 40px auto;
 }
 
-.footer_phone {
-    background-image: url(../img/icons/phone.png);
-    background-repeat: no-repeat;
+.footer_phone, .footer_email, .footer_delivery {
     padding-left: 30px;
     margin-top: 20px;
-    background-position: 0px 4px;
-}
-
-.footer_email {
-    background-image: url(../img/icons/email.png);
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    margin-top: 20px;
-    background-position: 0px 5px;
 }
 
 .footer_img {
@@ -653,14 +612,6 @@ footer {
     .footer_img img {
         margin: 0px 30px 0px 0px;
     }
-
-.footer_delivery {
-    background-image: url(../img/icons/track.png);
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    margin-top: 20px;
-    background-position: 0px 4px;
-}
 
 /*social*/
 .share {
@@ -747,9 +698,26 @@ footer h3 {
     display: none;
 }
 
-.arrow_right {
-    background-image: url(/img/icons/right_button.png);
-    width: 40px;
-    height: 40px;
+a>.glyphicon {
+    
 }
 
+.right_arrow {
+    background-image: url('/img/icons/strelka_vpravo.png');
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+.left_arrow {
+    background-image: url('/img/icons/strelka_vlevo.png');
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+/* for youtube */
+/*iframe {
+   border:0px solid transparent;
+   border-radius: 5px !important;
+}*/
