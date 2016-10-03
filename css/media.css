@@ -167,6 +167,14 @@
     #user_block {
         position: relative !important;
     }
+
+    .order_title {
+        display: none !important;
+    }
+
+    .order_item {
+        font-size: 10px !important;
+    }
 }
 
 /* Custom, iPhone Retina */
