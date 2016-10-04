@@ -234,25 +234,25 @@ function toggleBounce() {
 
 
 ////////------------ menu.html -------------------------------
-$(window).ready(function () {
-    console.log('112');
-    $('.food_item').each(function () {
-        var wb = $(this).find('.work_block');
-        var min = 80;
-        var max = 100;
-        var width = Math.floor(Math.random() * (max - min + 1)) + min;
-        wb.css('width', width + '%');
+//$(window).ready(function () {
+//    console.log('112');
+//    $('.food_item').each(function () {
+//        var wb = $(this).find('.work_block');
+//        var min = 80;
+//        var max = 100;
+//        var width = Math.floor(Math.random() * (max - min + 1)) + min;
+//        wb.css('width', width + '%');
 
-        min = 10;
-        max = 80;
-        var top = Math.floor(Math.random() * (max - min + 1)) + min;
-        wb.css('top', top + '%');
+//        min = 10;
+//        max = 80;
+//        var top = Math.floor(Math.random() * (max - min + 1)) + min;
+//        wb.css('top', top + '%');
 
-        //$(this).mouseout(function () {
-        //    $(this).find('.work_block').css('opacity', '1');
-        //})
-    })
-})
+//        //$(this).mouseout(function () {
+//        //    $(this).find('.work_block').css('opacity', '1');
+//        //})
+//    })
+//})
 
 $(function () {
     $(window).ready( function() {
