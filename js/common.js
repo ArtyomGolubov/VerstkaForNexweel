@@ -320,3 +320,20 @@ $(function () {
         $("body,html").animate({ "scrollTop": 0 }, scrollTime);
     });
 });
+
+
+// user
+function Login() {
+    $('.user_block').toggle();
+    $('.user_block_autorise').css('display', 'flex');
+}
+
+function user_menu() {
+    $('.user_menu').toggle();
+}
+
+function logout() {
+    $('.user_menu').toggle();
+    $('.user_block_autorise').css('display', 'none');
+    $('.user_block').toggle();
+}
