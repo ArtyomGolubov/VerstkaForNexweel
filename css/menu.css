@@ -22,7 +22,7 @@
 }
 
 .food_item .h4_dishes {
-    font-size: 15px;
+    font-size: 16px;
     font-family: Roboto-Regular;
     color: #512c15;
 }
@@ -39,7 +39,7 @@
 
 .work_block {
     position: absolute;
-    background-color: rgba(250, 250, 238, .7);
+    background-color: rgba(250, 250, 238, .9);
     width: 100%;
 }
 
@@ -104,13 +104,42 @@
     margin: auto;
 }
 
-.header_menu a:hover{
+.header_menu a:hover, .header_menu a:focus{
     color: #512c15;
+}
+
+.work_block.top10p_w90 {
+    top: 10%;
+    width: 90%;
+}
+
+.work_block.top40p_w90 {
+    top: 40%;
+    width: 90%;
+}
+
+.work_block.top65p_w90 {
+    top: 65%;
+    width: 90%;
+}
+
+.work_block.top75 {
+    top: 0px;
+    width: 75%;
+    right: 25px;
+    left: 25px;
+}
+
+.work_block.bottom75 {
+    bottom: 0px;
+    width: 75%;
+    right: 25px;
+    left: 25px;
 }
 
 hr {
     border: none; /* Убираем границу для браузера Firefox */
     color: #ecece0; /* Цвет линии для остальных браузеров */
     background-color: #ecece0; /* Цвет линии для браузера Firefox и Opera */
-    height: 2px; /* Толщина линии */
+    height: 1px; /* Толщина линии */
 }

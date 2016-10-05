@@ -1,13 +1,11 @@
 ﻿#price_block {
     position: absolute;
-    /*bottom: auto;
-    right: auto;
-    top: auto;
-    left: auto;*/
     display: flex;
     justify-content: flex-end;
     background-color: #eeeee3;
     border-radius: 5px;
+
+    text-align: center;
 }
 
 #price_block .btn {
@@ -16,6 +14,8 @@
     background: linear-gradient(#f89b2e, #e8701b);
     bottom: 0px;
     z-index: 10;
+
+    position: relative;
 }
 
 #price_block .btn:active {
@@ -24,8 +24,8 @@
 
 .price1 {
     bottom: 0px;
-    right: 33px;
-    display: flex;
+    /*right: 33px;*/
+    display: inline-block;
     justify-content: center;
     flex-flow: row nowrap;
 
@@ -33,6 +33,9 @@
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     background-position-x: 10px;
+
+    position: relative;
+    float: left;
 }
 
 .price1_currency {
@@ -40,6 +43,8 @@
     font-size: 13px;
     font-family: Roboto-Bold;
     color: #512c15;
+
+    display: inline-block;
 }
 
 .price1_value {
@@ -59,12 +64,8 @@
 }
 
 #price_block.top_center {
-    margin-left: 20%;
-    margin-right: 20%;
-    left: 0;
-    right: 0;
+    margin-left: 25%;
     top: 0px;
-    /*bottom: auto;*/
 }
 
 #price_block.bottom_left {
@@ -78,9 +79,6 @@
 }
 
 #price_block.bottom_center {
-    margin-left: 20%;
-    margin-right: 20%;
-    left: 0;
-    right: 0; 
+    margin-left: 25%;
     bottom: 0px;
 }

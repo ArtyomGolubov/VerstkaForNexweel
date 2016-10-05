@@ -15,17 +15,24 @@
     <link rel="stylesheet" href="css/fonts.css" />
 
     <script src="libs/jquery/jquery-2.1.4.min.js"></script>
+    <script src="libs/jquery_lazyload-1.9.7/jquery.lazyload.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="js/TiltedContentSlideshow/modernizr.custom.js"></script>
 </head>
 <body>
+    <div id="page-preloader">
+        <div class="loader">Loading...</div>
+    </div>
+
     <header class="wrapper">
         <!-- header 2 -->
         <div class="head">
             <div class="head_item" id="logo">
                 <h1 class="text-hide" style="margin-bottom: -130px; position: absolute;">Ресторан "Кебаб"</h1>
-                <img class="img-responsive" src="img/logo.png" alt="logo" />
+                <a href="index.html">
+                    <img class="img-responsive" src="img/logo.png" alt="logo" />
+                </a>
             </div>
             <div class="container container-fluid" id="head_info">
                 <div class="row">
@@ -226,7 +233,7 @@
 
                 <div id="price_block"class="bottom_center">
                     <span class="price1">
-                        <span class="price1_value">176</span>
+                        <span class="price1_value">17</span>
                         <span class="price1_currency">грн.</span>
                     </span>
                     <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
@@ -277,7 +284,7 @@
 
                 <div id="price_block"class="top_center">
                     <span class="price1">
-                        <span class="price1_value">136</span>
+                        <span class="price1_value">13436</span>
                         <span class="price1_currency">грн.</span>
                     </span>
                     <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
@@ -288,114 +295,308 @@
             <div class="food_item">
                 <div class="work_block">
                     <div class="food_info">
-                        <h4 class="h4_dishes">Пюрешка</h4>
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
                     </div>
                 </div>
-                <img class="img-responsive food_item_img" src="/img/food_menu/img7.png" alt="Alternate Text" />
-            </div>
-            <div class="food_item">
-                <div class="work_block">
-                    <div class="food_info">
-                        <h4 class="h4_dishes">Пюрешка</h4>
-                    </div>
+
+                <div id="price_block" class="bottom_right">
+                    <span class="price1">
+                        <span class="price1_value">136</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
                 </div>
-                <img class="img-responsive food_item_img" src="/img/food_menu/img8.png" alt="Alternate Text" />
-            </div>
-            <div class="food_item">
-                <div class="work_block">
-                    <div class="food_info">
-                        <h4 class="h4_dishes">Шашлык</h4>
-                    </div>
-                </div>
-                <img class="img-responsive food_item_img" src="/img/food_menu/img9.png" alt="Alternate Text" />
-            </div>
-            <div class="food_item">
-                <div class="work_block">
-                    <div class="food_info">
-                        <h4 class="h4_dishes">Харчо</h4>
-                    </div>
-                </div>
-                <img class="img-responsive food_item_img" src="/img/food_menu/img10.png" alt="Alternate Text" />
-            </div>
-            <div class="food_item">
-                <div class="work_block">
-                    <div class="food_info">
-                        <h4 class="h4_dishes">Макароны</h4>
-                    </div>
-                </div>
+
                 <img class="img-responsive food_item_img" src="/img/food_menu/img1.png" alt="Alternate Text" />
             </div>
             <div class="food_item">
                 <div class="work_block">
                     <div class="food_info">
-                        <h4 class="h4_dishes">Хлебо-булочные изделия</h4>
+                        <h4 class="h4_dishes">Домашняя выпечка с вареньем (250 гр.)</h4>
                     </div>
                 </div>
+
+                <div id="price_block" class="bottom_left">
+                    <span class="price1">
+                        <span class="price1_value">13336</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
                 <img class="img-responsive food_item_img" src="/img/food_menu/img2.png" alt="Alternate Text" />
             </div>
             <div class="food_item">
                 <div class="work_block">
                     <div class="food_info">
-                        <h4 class="h4_dishes">Манты</h4>
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
                     </div>
                 </div>
+
+                <div id="price_block" class="bottom_center">
+                    <span class="price1">
+                        <span class="price1_value">17</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
                 <img class="img-responsive food_item_img" src="/img/food_menu/img3.png" alt="Alternate Text" />
             </div>
             <div class="food_item">
-                <div class="work_block">
+                <div class="work_block" style="bottom: 0px; top: auto">
                     <div class="food_info">
-                        <h4 class="h4_dishes">Лагман</h4>
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
                     </div>
                 </div>
+
+                <div id="price_block" class="top_right">
+                    <span class="price1">
+                        <span class="price1_value">136</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
                 <img class="img-responsive food_item_img" src="/img/food_menu/img4.png" alt="Alternate Text" />
             </div>
             <div class="food_item">
-                <div class="work_block">
+                <div class="work_block" style="bottom: 0px; top: auto">
                     <div class="food_info">
-                        <h4 class="h4_dishes">Пюрешка</h4>
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
                     </div>
                 </div>
+
+                <div id="price_block" class="top_left">
+                    <span class="price1">
+                        <span class="price1_value">136</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
                 <img class="img-responsive food_item_img" src="/img/food_menu/img5.png" alt="Alternate Text" />
             </div>
             <div class="food_item">
-                <div class="work_block">
+                <div class="work_block" style="bottom: 0px; top: auto">
                     <div class="food_info">
-                        <h4 class="h4_dishes">Пюрешка</h4>
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
                     </div>
                 </div>
+
+                <div id="price_block" class="top_center">
+                    <span class="price1">
+                        <span class="price1_value">16</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
                 <img class="img-responsive food_item_img" src="/img/food_menu/img6.png" alt="Alternate Text" />
             </div>
             <div class="food_item">
                 <div class="work_block">
                     <div class="food_info">
-                        <h4 class="h4_dishes">Пюрешка</h4>
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
                     </div>
                 </div>
-                <img class="img-responsive food_item_img" src="/img/food_menu/img7.png" alt="Alternate Text" />
+
+                <div id="price_block" class="bottom_right">
+                    <span class="price1">
+                        <span class="price1_value">1376</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img1.png" alt="Alternate Text" />
             </div>
             <div class="food_item">
                 <div class="work_block">
                     <div class="food_info">
-                        <h4 class="h4_dishes">Пюрешка</h4>
+                        <h4 class="h4_dishes">Домашняя выпечка с вареньем (250 гр.)</h4>
                     </div>
                 </div>
-                <img class="img-responsive food_item_img" src="/img/food_menu/img8.png" alt="Alternate Text" />
+
+                <div id="price_block" class="bottom_left">
+                    <span class="price1">
+                        <span class="price1_value">1336</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img2.png" alt="Alternate Text" />
             </div>
             <div class="food_item">
                 <div class="work_block">
                     <div class="food_info">
-                        <h4 class="h4_dishes">Шашлык</h4>
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
                     </div>
                 </div>
-                <img class="img-responsive food_item_img" src="/img/food_menu/img9.png" alt="Alternate Text" />
+
+                <div id="price_block" class="bottom_center">
+                    <span class="price1">
+                        <span class="price1_value">7</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img3.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block" style="bottom: 0px; top: auto">
+                    <div class="food_info">
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
+                    </div>
+                </div>
+
+                <div id="price_block" class="top_right">
+                    <span class="price1">
+                        <span class="price1_value">16</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img4.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block" style="bottom: 0px; top: auto">
+                    <div class="food_info">
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
+                    </div>
+                </div>
+
+                <div id="price_block" class="top_left">
+                    <span class="price1">
+                        <span class="price1_value">77136</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img5.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block" style="bottom: 0px; top: auto">
+                    <div class="food_info">
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
+                    </div>
+                </div>
+
+                <div id="price_block" class="top_center">
+                    <span class="price1">
+                        <span class="price1_value">7436</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img6.png" alt="Alternate Text" />
             </div>
             <div class="food_item">
                 <div class="work_block">
                     <div class="food_info">
-                        <h4 class="h4_dishes">Харчо</h4>
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
                     </div>
                 </div>
-                <img class="img-responsive food_item_img" src="/img/food_menu/img10.png" alt="Alternate Text" />
+
+                <div id="price_block" class="bottom_right">
+                    <span class="price1">
+                        <span class="price1_value">1365</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img1.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="food_info">
+                        <h4 class="h4_dishes">Домашняя выпечка с вареньем (250 гр.)</h4>
+                    </div>
+                </div>
+
+                <div id="price_block" class="bottom_left">
+                    <span class="price1">
+                        <span class="price1_value">1336</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img2.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block">
+                    <div class="food_info">
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
+                    </div>
+                </div>
+
+                <div id="price_block" class="bottom_center">
+                    <span class="price1">
+                        <span class="price1_value">7</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img3.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block" style="bottom: 0px; top: auto">
+                    <div class="food_info">
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
+                    </div>
+                </div>
+
+                <div id="price_block" class="top_right">
+                    <span class="price1">
+                        <span class="price1_value">13677</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img4.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block" style="bottom: 0px; top: auto">
+                    <div class="food_info">
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
+                    </div>
+                </div>
+
+                <div id="price_block" class="top_left">
+                    <span class="price1">
+                        <span class="price1_value">16</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img5.png" alt="Alternate Text" />
+            </div>
+            <div class="food_item">
+                <div class="work_block" style="bottom: 0px; top: auto">
+                    <div class="food_info">
+                        <h4 class="h4_dishes">Карамелизованная груша с черничным соусом (250 гр.)</h4>
+                    </div>
+                </div>
+
+                <div id="price_block" class="top_center">
+                    <span class="price1">
+                        <span class="price1_value">136</span>
+                        <span class="price1_currency">грн.</span>
+                    </span>
+                    <div class="btn"><img src="/img/icons/btn-plus.png" alt="Alternate Text" /></div>
+                </div>
+
+                <img class="img-responsive food_item_img" src="/img/food_menu/img6.png" alt="Alternate Text" />
             </div>
         </div>
     </div>
@@ -466,7 +667,7 @@
         </div>
     </footer>
 
-    <a href="#" title="Вернуться к началу" id="toTop"><img src="img/icons/up_button.png" alt="Alternate Text" /></a>
+    <div title="Вернуться к началу" id="toTop"><img src="img/icons/up_button.png" alt="Alternate Text" /></div>
 
     <script src="js/common.js"></script>
 </body>

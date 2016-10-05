@@ -20,17 +20,26 @@
     display: inline-table;
     margin-left: 10px;
 }
-
-.adds input {
-    border: none;
-    background-color: transparent;
-    margin-left: 10px;
-    box-shadow: none;
-}
+    /* magiya! input shadow - off!!!*/
+    .adds input, .order_touchspin input {
+        outline: none;
+        border: none !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+        background-color: transparent !important;
+        text-align: center;
+        
+    }
 
 .adds li {
+    display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.adds ul {
+    padding: 0;
 }
 
 .adds li>div {
@@ -39,13 +48,14 @@
 
 .adds li>div>span {
     align-self: center;
-    width: 140px;
+    width: 80px;
 }
 
 .adds .btn-default {
     border: none;
     border-radius: 5px  !important;
     background: linear-gradient(#f89b2e, #e8701b);
+
     font-family: Roboto-Bold;
     font-size: 21px;
     color: #fff;
@@ -76,8 +86,8 @@
     border-top-left-radius: 5px;
     background-position-x: 10px;
     position: absolute;
-    height: 2.3em;
-    right: 95px;
+    height: 2.65em;
+    right: 112px;
     display: flex;
 }
 
@@ -107,3 +117,8 @@
         background: linear-gradient(#e8701b, #f89b2e);
         color: #fff;
     }
+
+.order .panel-group .panel+.panel {
+    margin: 0px;
+    border-bottom-color: #d0d0bf !important;
+}

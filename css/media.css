@@ -175,6 +175,14 @@
     .order_item {
         font-size: 10px !important;
     }
+
+    .order_item_sum {
+        width: 4em !important;
+    }
+
+    .confirm_btns {
+        justify-content: center !important;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -208,6 +216,12 @@
 
     #head_info {
         width: 57%;
+    }
+
+    .head_info_item.two_item {
+        display: flex;
+        justify-content: center;
+        padding-left: 1%;
     }
 }
 

@@ -1,16 +1,25 @@
 ﻿
+$(window).on('load', function () {
+    var preloader = $('#page-preloader'),
+        loader = preloader.find('.loader');
+    loader.fadeOut();
+    preloader.delay(350).fadeOut('slow');
+});
+
+$(function () {
+    $("img.lazy").lazyload({
+        effect: "fadeIn"
+    });
+});
 
 
+//(function () {
 
-(function () {
-//------#menu-top-------------------------
-var a = document.querySelector('#menu'), b = document.querySelector('#menu-top'), P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
-window.addEventListener('scroll', Ascroll, false);
-document.body.addEventListener('scroll', Ascroll, false);
 
 // изменение меню при  прокрутке
 function Ascroll() {
 
+    var a = document.querySelector('#menu'), b = document.querySelector('#menu-top'), P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
     ChangeMainMenu();
 
     var Ra = a.getBoundingClientRect(),
@@ -37,6 +46,13 @@ function Ascroll() {
 }
 
 $(window).ready(function () {
+
+    $("input[name^='touchspin']").attr("readonly", true);
+    //------#menu-top-------------------------
+    
+    window.addEventListener('scroll', Ascroll, false);
+    document.body.addEventListener('scroll', Ascroll, false);
+
     SizeMenuInit();
     Ascroll();
     CheckDropdownMenuBtn();
@@ -145,7 +161,7 @@ function SizeMenuInit() {
         }
     });
 }
-})();
+//})();
 
 
 //----- DROPDOWN MENU ------------------
@@ -163,20 +179,22 @@ function dropdownMenu() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
+$(window).ready(function () {
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
 
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
             }
+            $('.nav_main').css('border-radius', '5px');
         }
-        $('.nav_main').css('border-radius', '5px');
     }
-}
+});
 
 
 // ------------ call me -----------------------
@@ -233,7 +251,7 @@ function toggleBounce() {
 }
 
 
-////////------------ menu.html -------------------------------
+
 //$(window).ready(function () {
 //    console.log('112');
 //    $('.food_item').each(function () {
@@ -255,16 +273,50 @@ function toggleBounce() {
 //})
 
 $(function () {
-    $(window).ready( function() {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() != 0) {
-                $('#toTop').fadeIn();
-            } else {
-                $('#toTop').fadeOut();
-            }
-        });
-        $('#toTop').click(function () {
-            $('body,html').animate({ scrollTop: 0 }, 800);
-        });
+    //$(window).ready( function() {
+    //    $(window).scroll(function () {
+    //        if ($(this).scrollTop() != 0) {
+    //            $('#toTop').fadeIn();
+    //        } else {
+    //            $('#toTop').fadeOut();
+    //        }
+    //    });
+    //    $('#toTop').click(function () {
+    //        $('body,html').animate({ scrollTop: 0 }, 800);
+    //    });
+    //});
+
+
+
+    //var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+    //var delay = 1000; // Задержка прокрутки
+    //$(document).ready(function () {
+    //    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+    //        /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+    //        if ($(this).scrollTop() > top_show) $('#toTop').fadeIn();
+    //        else $('#toTop').fadeOut();
+    //    });
+    //    $('#toTop').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+    //        /* Плавная прокрутка наверх */
+    //        $('body, html').animate({
+    //            scrollTop: 0
+    //        }, delay);
+    //    });
+    //});
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+
+    //Обработка нажатия на кнопку "Вверх"
+    $("#toTop").click(function () {
+        //Необходимо прокрутить в начало страницы
+        var curPos = $(document).scrollTop();
+        var scrollTime = curPos / 1.73;
+        $("body,html").animate({ "scrollTop": 0 }, scrollTime);
     });
 });
