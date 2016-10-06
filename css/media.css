@@ -183,6 +183,10 @@
     .confirm_btns {
         justify-content: center !important;
     }
+
+    .alerts, .user_orders, .user_messages, .user_dialog, .user_single_order {
+        width: 100%;
+    }
 }
 
 /* Custom, iPhone Retina */

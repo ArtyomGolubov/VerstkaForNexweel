@@ -330,6 +330,9 @@ function Login() {
 
 function user_menu() {
     $('.user_menu').toggle();
+    $('.alerts').hide();
+    $('.user_orders').hide();
+    $('.user_messages').hide();
 }
 
 function logout() {
@@ -337,3 +340,55 @@ function logout() {
     $('.user_block_autorise').css('display', 'none');
     $('.user_block').toggle();
 }
+
+function userAlertsShow() {
+    $('.user_menu').toggle();
+    $('.alerts').toggle();
+}
+
+function userAlertsHide() {
+    $('.alerts').toggle();
+    $('.user_menu').toggle();
+}
+
+function userOrdersShow() {
+    $('.user_menu').toggle();
+    $('.user_orders').toggle();
+}
+
+function userOrdersHide() {
+    $('.user_orders').toggle();
+    $('.user_menu').toggle();
+}
+
+function userMessagesShow() {
+    $('.user_menu').toggle();
+    $('.user_messages').toggle();
+}
+
+function userMessagesHide() {
+    $('.user_messages').toggle();
+    $('.user_menu').toggle();
+}
+
+function userDialogShow() {
+    $('.user_dialog').toggle();
+    $('.user_messages').toggle();
+}
+
+function userDialogHide() {
+    $('.user_messages').toggle();
+    $('.user_dialog').toggle();
+}
+
+function userSingleOrderShow() {
+    $('.user_single_order').toggle();
+    $('.user_orders').toggle();
+}
+
+function userSingleOrderHide() {
+    $('.user_orders').toggle();
+    $('.user_single_order').toggle();
+}
+
+
