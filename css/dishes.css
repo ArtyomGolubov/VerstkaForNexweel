@@ -13,9 +13,10 @@
     border-radius: 5px;
     background: linear-gradient(#f89b2e, #e8701b);
     bottom: 0px;
-    z-index: 10;
+    z-index: 1;
 
     position: relative;
+    border: none;
 }
 
 #price_block .btn:active {
@@ -45,6 +46,7 @@
     color: #512c15;
 
     display: inline-block;
+    vertical-align: super;
 }
 
 .price1_value {

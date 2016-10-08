@@ -121,7 +121,7 @@
     float: left;
 }
 
-.user_block_autorise {
+/*.user_block_autorise {
     display: none;
     border: 1px solid #ecece0;
     border-radius: 5px;
@@ -141,7 +141,6 @@
 .user_menu {
     display: none;
     border: none;
-    /*border-radius: 0 0 5px 5px;*/
     background-color: #ffffff;
 }
 
@@ -264,12 +263,12 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
+}*/
 
-.user_message {
+/*.user_message {
     width: 150px;
-    white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    white-space: nowrap; 
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
@@ -279,7 +278,7 @@
 }
 
 .user_message_from_dialog {
-    /*width: 180px;*/
+
 }
 
 .message_area {
@@ -351,7 +350,7 @@
 
 .edit_order:active {
     background: linear-gradient(#e8701b, #f89b2e);
-}
+}*/
 /*---------------------*/
 
 #delivery_1 {
@@ -432,7 +431,7 @@
 #menu-top {
     display: none;
     position: fixed;
-    z-index: 101;
+    z-index: 9;
     top: 0px;
     width: 3000px;
     margin: 0 0 0 -910px;
@@ -558,7 +557,7 @@
     float: right;
     top: 2px;
     right: 0px;
-    z-index: 101;
+    z-index: 9;
     font-size: 15px;
 }
 
@@ -588,9 +587,9 @@
     color: #f89b2f;
 }
 
-.show {
+/*.show {
     display: block;
-}
+}*/
 /*-------------------*/
 
 /*NAVBAR END*/
@@ -637,6 +636,10 @@
         height: 16px;
         margin: 1px;
     }
+
+#slideshow > nav{
+    z-index: 8;
+}
 
 /*SLIDER-1 END*/
 
@@ -953,12 +956,13 @@ a > .glyphicon {
 }
 
 /* for youtube */
-iframe {
-   border:0px solid transparent;
+/*iframe {
    border-radius: 5px !important;
+}*/
+
+.gallery {
+    margin-top: 20px;
 }
-
-
 
 
 #page-preloader {
@@ -1048,4 +1052,9 @@ iframe {
         transform: rotate(360deg);
         box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
     }
+}
+
+.footer_block_1 {
+    display: flex;
+    justify-content: center;
 }

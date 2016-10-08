@@ -132,7 +132,7 @@
     opacity: 1;
 }
 
-.hide .description {
+.hide-tc .description {
     opacity: 0;
 }
 
@@ -144,12 +144,12 @@
 /***********************/
 /* Move up */
 /***********************/
-.hide[data-effect-out="moveUpOut"] .tiltview a {
+.hide-tc[data-effect-out="moveUpOut"] .tiltview a {
     -webkit-animation: moveUpOut 1.5s both;
     animation: moveUpOut 1.5s both;
 }
 
-    .hide[data-effect-out="moveUpOut"] .tiltview a:nth-child(2) {
+    .hide-tc[data-effect-out="moveUpOut"] .tiltview a:nth-child(2) {
         -webkit-animation-delay: 0.25s;
         animation-delay: 0.25s;
     }
@@ -226,12 +226,12 @@
 /***********************/
 /* Move down */
 /***********************/
-.hide[data-effect-out="moveDownOut"] .tiltview a {
+.hide-tc[data-effect-out="moveDownOut"] .tiltview a {
     -webkit-animation: moveDownOut 1.5s both;
     animation: moveDownOut 1.5s both;
 }
 
-    .hide[data-effect-out="moveDownOut"] .tiltview a:nth-child(2) {
+    .hide-tc[data-effect-out="moveDownOut"] .tiltview a:nth-child(2) {
         -webkit-animation-delay: 0.25s;
         animation-delay: 0.25s;
     }
@@ -308,12 +308,12 @@
 /***********************/
 /* Slide up */
 /***********************/
-.hide[data-effect-out="slideUpOut"] .tiltview a {
+.hide-tc[data-effect-out="slideUpOut"] .tiltview a {
     -webkit-animation: slideUpOut 1.5s both;
     animation: slideUpOut 1.5s both;
 }
 
-    .hide[data-effect-out="slideUpOut"] .tiltview a:nth-child(2) {
+    .hide-tc[data-effect-out="slideUpOut"] .tiltview a:nth-child(2) {
         -webkit-animation-delay: 0.25s;
         animation-delay: 0.25s;
     }
@@ -390,13 +390,13 @@
 /***********************/
 /* Slide down */
 /***********************/
-.hide[data-effect-out="slideDownOut"] .tiltview a {
+.hide-tc[data-effect-out="slideDownOut"] .tiltview a {
     -webkit-animation: slideDownOut 1.5s both;
     animation: slideDownOut 1.5s both;
 }
 
-.hide[data-effect-out="slideDownOut"] .tiltview.row a:nth-child(2),
-.hide[data-effect-out="slideDownOut"] .tiltview.col a:first-child {
+.hide-tc[data-effect-out="slideDownOut"] .tiltview.row a:nth-child(2),
+.hide-tc[data-effect-out="slideDownOut"] .tiltview.col a:first-child {
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
 }
@@ -474,12 +474,12 @@
 /***********************/
 /* Slide left */
 /***********************/
-.hide[data-effect-out="slideLeftOut"] .tiltview a {
+.hide-tc[data-effect-out="slideLeftOut"] .tiltview a {
     -webkit-animation: slideLeftOut 1.5s both;
     animation: slideLeftOut 1.5s both;
 }
 
-    .hide[data-effect-out="slideLeftOut"] .tiltview a:nth-child(2) {
+    .hide-tc[data-effect-out="slideLeftOut"] .tiltview a:nth-child(2) {
         -webkit-animation-delay: 0.25s;
         animation-delay: 0.25s;
     }
@@ -556,13 +556,13 @@
 /***********************/
 /* Slide right */
 /***********************/
-.hide[data-effect-out="slideRightOut"] .tiltview a {
+.hide-tc[data-effect-out="slideRightOut"] .tiltview a {
     -webkit-animation: slideRightOut 1.5s both;
     animation: slideRightOut 1.5s both;
 }
 
-.hide[data-effect-out="slideRightOut"] .tiltview.col a:nth-child(2),
-.hide[data-effect-out="slideRightOut"] .tiltview.row a:first-child {
+.hide-tc[data-effect-out="slideRightOut"] .tiltview.col a:nth-child(2),
+.hide-tc[data-effect-out="slideRightOut"] .tiltview.row a:first-child {
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
 }
@@ -639,9 +639,9 @@
 
 /* Fallback for no 3D Transforms and no preserve-3d */
 .no-csstransformspreserve3d .show .tiltview a,
-.no-csstransformspreserve3d .hide .tiltview a,
+.no-csstransformspreserve3d .hide-tc .tiltview a,
 .no-csstransforms3d .show .tiltview a,
-.no-csstransforms3d .hide .tiltview a {
+.no-csstransforms3d .hide-tc .tiltview a {
     -webkit-animation: none !important;
     animation: none !important;
 }

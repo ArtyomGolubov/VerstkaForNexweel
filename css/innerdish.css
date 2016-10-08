@@ -48,7 +48,7 @@
 
 .adds li>div>span {
     align-self: center;
-    width: 80px;
+    width: 150px;
 }
 
 .adds .btn-default {
@@ -91,6 +91,10 @@
     display: flex;
 }
 
+#buy_block > div {
+    font-size: 18px !important;
+}
+
 .price_value {
     font-size: 25px;
     align-self: center;
@@ -98,6 +102,7 @@
 
 .price_currency {
     align-self: flex-end;
+    padding-bottom: 7px;
 }
 
 .price_value, .price_currency {

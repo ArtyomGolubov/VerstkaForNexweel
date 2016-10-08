@@ -4,13 +4,14 @@ $(window).on('load', function () {
         loader = preloader.find('.loader');
     loader.fadeOut();
     preloader.delay(350).fadeOut('slow');
+    $('#content').show();
 });
 
-$(function () {
-    $("img.lazy").lazyload({
-        effect: "fadeIn"
-    });
-});
+//$(function () {
+//    $("img.lazy").lazyload({
+//        effect: "fadeIn"
+//    });
+//});
 
 
 //(function () {
@@ -46,17 +47,18 @@ function Ascroll() {
 }
 
 $(window).ready(function () {
+    setTimeout(function () {
+        $("input[name^='touchspin']").attr("readonly", true);
+        //------#menu-top-------------------------
 
-    $("input[name^='touchspin']").attr("readonly", true);
-    //------#menu-top-------------------------
-    
-    window.addEventListener('scroll', Ascroll, false);
-    document.body.addEventListener('scroll', Ascroll, false);
+        window.addEventListener('scroll', Ascroll, false);
+        document.body.addEventListener('scroll', Ascroll, false);
 
-    SizeMenuInit();
-    Ascroll();
-    CheckDropdownMenuBtn();
-    ChangeMainMenu();
+        SizeMenuInit();
+        Ascroll();
+        CheckDropdownMenuBtn();
+        ChangeMainMenu();
+    }, 2000);
 });
 
 $(window).bind('orientationchange', function (e) {
@@ -250,28 +252,6 @@ function toggleBounce() {
     }
 }
 
-
-
-//$(window).ready(function () {
-//    console.log('112');
-//    $('.food_item').each(function () {
-//        var wb = $(this).find('.work_block');
-//        var min = 80;
-//        var max = 100;
-//        var width = Math.floor(Math.random() * (max - min + 1)) + min;
-//        wb.css('width', width + '%');
-
-//        min = 10;
-//        max = 80;
-//        var top = Math.floor(Math.random() * (max - min + 1)) + min;
-//        wb.css('top', top + '%');
-
-//        //$(this).mouseout(function () {
-//        //    $(this).find('.work_block').css('opacity', '1');
-//        //})
-//    })
-//})
-
 $(function () {
     //$(window).ready( function() {
     //    $(window).scroll(function () {
@@ -323,72 +303,74 @@ $(function () {
 
 
 // user
-function Login() {
-    $('.user_block').toggle();
-    $('.user_block_autorise').css('display', 'flex');
-}
+//function Login() {
+//    $('.user_block').toggle();
+//    $('.user_block_autorise').css('display', 'flex');
+//}
 
-function user_menu() {
-    $('.user_menu').toggle();
-    $('.alerts').hide();
-    $('.user_orders').hide();
-    $('.user_messages').hide();
-}
+//function user_menu() {
+//    $('.user_menu').toggle();
+//    $('.alerts').hide();
+//    $('.user_orders').hide();
+//    $('.user_messages').hide();
+//    $('.user_single_order').hide();
+//    $('.user_dialog').hide();
+//}
 
-function logout() {
-    $('.user_menu').toggle();
-    $('.user_block_autorise').css('display', 'none');
-    $('.user_block').toggle();
-}
+//function logout() {
+//    $('.user_menu').toggle();
+//    $('.user_block_autorise').css('display', 'none');
+//    $('.user_block').toggle();
+//}
 
-function userAlertsShow() {
-    $('.user_menu').toggle();
-    $('.alerts').toggle();
-}
+//function userAlertsShow() {
+//    $('.user_menu').toggle();
+//    $('.alerts').toggle();
+//}
 
-function userAlertsHide() {
-    $('.alerts').toggle();
-    $('.user_menu').toggle();
-}
+//function userAlertsHide() {
+//    $('.alerts').toggle();
+//    $('.user_menu').toggle();
+//}
 
-function userOrdersShow() {
-    $('.user_menu').toggle();
-    $('.user_orders').toggle();
-}
+//function userOrdersShow() {
+//    $('.user_menu').toggle();
+//    $('.user_orders').toggle();
+//}
 
-function userOrdersHide() {
-    $('.user_orders').toggle();
-    $('.user_menu').toggle();
-}
+//function userOrdersHide() {
+//    $('.user_orders').toggle();
+//    $('.user_menu').toggle();
+//}
 
-function userMessagesShow() {
-    $('.user_menu').toggle();
-    $('.user_messages').toggle();
-}
+//function userMessagesShow() {
+//    $('.user_menu').toggle();
+//    $('.user_messages').toggle();
+//}
 
-function userMessagesHide() {
-    $('.user_messages').toggle();
-    $('.user_menu').toggle();
-}
+//function userMessagesHide() {
+//    $('.user_messages').toggle();
+//    $('.user_menu').toggle();
+//}
 
-function userDialogShow() {
-    $('.user_dialog').toggle();
-    $('.user_messages').toggle();
-}
+//function userDialogShow() {
+//    $('.user_dialog').toggle();
+//    $('.user_messages').toggle();
+//}
 
-function userDialogHide() {
-    $('.user_messages').toggle();
-    $('.user_dialog').toggle();
-}
+//function userDialogHide() {
+//    $('.user_messages').toggle();
+//    $('.user_dialog').toggle();
+//}
 
-function userSingleOrderShow() {
-    $('.user_single_order').toggle();
-    $('.user_orders').toggle();
-}
+//function userSingleOrderShow() {
+//    $('.user_single_order').toggle();
+//    $('.user_orders').toggle();
+//}
 
-function userSingleOrderHide() {
-    $('.user_orders').toggle();
-    $('.user_single_order').toggle();
-}
-
+//function userSingleOrderHide() {
+//    $('.user_orders').toggle();
+//    $('.user_single_order').toggle();
+//}
+//-------------------------------------------
 

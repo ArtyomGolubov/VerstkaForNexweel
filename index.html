@@ -13,33 +13,55 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/jssor_slider.css" />
     <link rel="stylesheet" href="css/slider2/component.css" />
+    <!--<link href="js/QueryLoader2/queryLoader.css" rel="stylesheet" type="text/css" />-->
+
+    <script src="libs/jquery/jquery-2.1.4.min.js"></script>
+    <!--<script src="js/QueryLoader2/jquery.queryloader2.min.js" type="text/javascript"></script>
+    <script src="js/QueryLoader2/script.js" type="text/javascript"></script>-->
+
+    <!--<link rel="stylesheet" href="css/User_block/styles.css" />
+    <link rel="stylesheet" href="css/User_block/mobile.css" />
+    <link rel="stylesheet" href="css/User_block/desktop.css" />-->
+    <link rel="stylesheet" href="css/User_block/user.css" />
+    
 
 </head>
 <body>
 
     <div id="page-preloader">
-        <div class="loader">Loading...</div>
+        <div class="loader"></div>
     </div>
 
-    <header class="wrapper">
-        <!-- header 2 -->
-        <div class="head">
-            <div class="head_item" id="logo">
-                <h1 class="text-hide" style="margin-bottom: -130px; position: absolute;">Ресторан "Кебаб"</h1>
-                <a href="index.html">
-                    <img class="img-responsive lazy" data-original="img/logo.png" alt="logo" />
-                </a>
-            </div>
-            <div class="container container-fluid" id="head_info">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12 col-md-push-8 head_info_item">
-                        <svg class="head_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
-                            <path fill="#f99b30" d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z" />
-                        </svg>
-                        <div class="delivery">
-                            <div class="header_text" id="delivery_1">
-                                <p class="p15 brown" id="time_1">Доставка блюд</p>
-                                <div class="time">
+    <div id="content">
+
+        <header class="wrapper">
+            <!-- header 2 -->
+            <div class="head">
+                <div class="head_item" id="logo">
+                    <h1 class="text-hide" style="margin-bottom: -130px; position: absolute;">Ресторан "Кебаб"</h1>
+                    <a href="index.html">
+                        <img class="img-responsive lazy" src="img/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <div class="container container-fluid" id="head_info">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12 col-md-push-8 head_info_item">
+                            <svg class="head_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
+                                <path fill="#f99b30" d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z" />
+                            </svg>
+                            <div class="delivery">
+                                <div class="header_text" id="delivery_1">
+                                    <p class="p15 brown" id="time_1">Доставка блюд</p>
+                                    <div class="time">
+                                        <span class="p15 brown">с</span>
+                                        <span class="p18 orange">9:00</span>
+                                        <span class="p15 brown">до</span>
+                                        <span class="p18 orange">23:00</span>
+                                        <p class="p15 brown">(без выходных)</p>
+                                    </div>
+                                </div>
+                                <div class="header_text" id="delivery_2">
+                                    <span class="p15 brown" id="time_1">Доставка блюд</span>
                                     <span class="p15 brown">с</span>
                                     <span class="p18 orange">9:00</span>
                                     <span class="p15 brown">до</span>
@@ -47,73 +69,64 @@
                                     <p class="p15 brown">(без выходных)</p>
                                 </div>
                             </div>
-                            <div class="header_text" id="delivery_2">
-                                <span class="p15 brown" id="time_1">Доставка блюд</span>
-                                <span class="p15 brown">с</span>
-                                <span class="p18 orange">9:00</span>
-                                <span class="p15 brown">до</span>
-                                <span class="p18 orange">23:00</span>
-                                <p class="p15 brown">(без выходных)</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 head_info_item">
+                            <svg class="head_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
+                                <path fill="#f99b30" d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" />
+                            </svg>
+                            <div class="opening_hours">
+                                <div class="header_text">
+                                    <p class="p15 brown">Время работы</p>
+                                    <div class="time">
+                                        <span class="p15 brown">с</span>
+                                        <span class="p18 orange">9:00</span>
+                                        <span class="p15 brown">до</span>
+                                        <span class="p18 orange">23:00</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 head_info_item">
-                        <svg class="head_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
-                            <path fill="#f99b30" d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" />
-                        </svg>
-                        <div class="opening_hours">
-                            <div class="header_text">
-                                <p class="p15 brown">Время работы</p>
-                                <div class="time">
-                                    <span class="p15 brown">с</span>
-                                    <span class="p18 orange">9:00</span>
-                                    <span class="p15 brown">до</span>
-                                    <span class="p18 orange">23:00</span>
+                        <div class="col-md-4 col-sm-12 col-xs-12 col-md-pull-8 head_info_item">
+                            <svg class="head_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
+                                <path fill="#f99b30" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                            </svg>
+                            <div class="callback">
+                                <div class="header_text">
+                                    <div class="p18 brown">(050)&nbsp;450-33-34</div>
+                                    <div class="p18 brown">(044)&nbsp;450-33-34</div>
+                                </div>
+                                <p class="p15 orange bold" id="callback">
+                                    Перезвоните мне
+                                </p>
+                                <div id="overlay"></div>
+                                <div id="call_me">
+                                    <form action="#" method="post" class="err brown" novalidate="novalidate">
+                                        <div class="inp-block">
+                                            <label for="name">Ваше имя</label>
+                                            <input type="text" name="name" id="name" placeholder="Ваше имя">
+                                        </div>
+                                        <div class="inp-block">
+                                            <label for="phone">Ваш номер телефона</label>
+                                            <input type="text" name="phone" id="phone" placeholder="+38 (___) ___-__-__" maxlength="19" autocomplete="off">
+                                        </div>
+                                        <input type="hidden" name="call" value="true">
+                                        <button type="submit">Перезвонить</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 col-md-pull-8 head_info_item">
-                        <svg class="head_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
-                            <path fill="#f99b30" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
-                        </svg>
-                        <div class="callback">
-                            <div class="header_text">
-                                <div class="p18 brown">(050)&nbsp;450-33-34</div>
-                                <div class="p18 brown">(044)&nbsp;450-33-34</div>
-                            </div>
-                            <p class="p15 orange bold" id="callback">
-                                Перезвоните мне
-                            </p>
-                            <div id="overlay"></div>
-                            <div id="call_me">
-                                <form action="#" method="post" class="err brown" novalidate="novalidate">
-                                    <div class="inp-block">
-                                        <label for="name">Ваше имя</label>
-                                        <input type="text" name="name" id="name" placeholder="Ваше имя">
-                                    </div>
-                                    <div class="inp-block">
-                                        <label for="phone">Ваш номер телефона</label>
-                                        <input type="text" name="phone" id="phone" placeholder="+38 (___) ___-__-__" maxlength="19" autocomplete="off">
-                                    </div>
-                                    <input type="hidden" name="call" value="true">
-                                    <button type="submit">Перезвонить</button>
-                                </form>
-                            </div>
-                        </div>
+                </div>
+                <div class="head_item" id="user_block">
+                    <div class="user_block" style="display: none">
+                        <a class="p14 brown bold" onclick="Login()">
+                            <svg class="user_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
+                                <path fill="#f99b30" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                            </svg>Войти
+                        </a> / <a class="p14 brown bold" href="order.html">Регистрация</a>
                     </div>
-                </div>
-            </div>
-            <div class="head_item" id="user_block">
-                <div class="user_block">
-                    <a class="p14 brown bold" onclick="Login()">
-                        <svg class="user_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
-                            <path fill="#f99b30" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
-                        </svg>Войти
-                    </a> / <a class="p14 brown bold" href="order.html">Регистрация</a>
-                </div>
 
-                <div class="user_main_block">
+                    <!--<div class="user_main_block">
                     <div class="user_block_autorise" onclick="user_menu()">
                         <img class="avatar img-responsive" src="img/avatar.png" />
                         <div class="user_name p15 bold brown">Панкратова Марина</div>
@@ -123,12 +136,9 @@
                         <a class="messages p15 brown" onclick="userMessagesShow()">Сообщения</a>
                         <a class="p15 brown" onclick="userAlertsShow()">Уведомления</a>
                         <a class="logout p15" onclick="logout()">Выйти</a>
-                        <!--<div class="logout" onclick="logout()">
-                            <div class="p15">Выйти</div>
-                        </div>-->
                     </div>
-                </div>
-                <div class="alerts">
+                </div>-->
+                    <!--<div class="alerts">
                     <div class="alerts_title">
                         <a class="" onclick="userAlertsHide()">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -174,8 +184,8 @@
                             <div class="alert_message p13 brown">Заказ успешно подтвержден</div>
                         </li>
                     </ul>
-                </div>
-                <div class="user_orders">
+                </div>-->
+                    <!--<div class="user_orders">
                     <div class="user_orders_title">
                         <a class="" onclick="userOrdersHide()">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -216,8 +226,8 @@
                             <div class="restaurant_name p13 brown">Папашон</div>
                         </li>
                     </ul>
-                </div>
-                <div class="user_messages">
+                </div>-->
+                    <!--<div class="user_messages">
                     <div class="user_messages_title">
                         <a class="" onclick="userMessagesHide()">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -288,8 +298,8 @@
                             <div class="message_date  p14 orange">12 апр</div>
                         </li>
                     </ul>
-                </div>
-                <div class="user_dialog">
+                </div>-->
+                    <!--<div class="user_dialog">
                     <div class="user_dialog_title">
                         <a class="" onclick="userDialogHide()">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -403,8 +413,8 @@
                             <div id="send" class="btn">Отправить</div>
                         </div>
                     </div>
-                </div>
-                <div class="user_single_order">
+                </div>-->
+                    <!--<div class="user_single_order">
                     <div class="user_single_order_title">
                         <a class="" onclick="userSingleOrderHide()">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -482,79 +492,829 @@
                     <div class="edit_order">
                         <div class="p15">Редактировать</div>
                     </div>
+                </div>-->
+
+                    <div id="prof" class="prof ">
+                        <div id="prof_icon" class="perc100 prof_icon align-items-vertical">
+                            <img src="img/prof/Layer17.png" class="profIMG"><span class="menu-user-name">Мохитова<br> Юлия</span>
+                        </div>
+                        <div id="prof_info" class="prof_info main-data-menu-opened" style="display: none;">
+                            <div id="prof_main" class="prof_main" style="display: block;">
+                                <div class="prof-main-menu-block">
+                                    <div class="prof_main_item" onclick="showItem('prof_main','prof_zak')">Заказы</div>
+                                    <div class="prof_main_item" onclick="showItem('prof_main','prof_dialog')">Сообщения (1234)</div>
+                                    <div class="prof_main_item" onclick="showItem('prof_main','prof_alert')">Уведомления (2689)</div>
+                                </div>
+                                <div id="bottom_mark" class="prof_exit row row-without-margin text-center">
+                                    Выйти
+                                </div>
+                            </div>
+
+                            <div id="prof_zak" class="prof_zak prof_other main-menu-punkt" hidden="true" style="display: none;">
+                                <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak','prof_main')">
+                                    <!--<img style="" src="img/prof/circle-arrow-left.png">-->
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#f89b2f" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                    </svg>
+                                    <span class="main-menu-back-button-label">Заказы</span>
+                                </div>
+
+                                <div id="scroll_zak" class="scroll_zak main-menu-body">
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Очень длинное название заведения в две строки</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_last_item" onclick="showItem('prof_zak','prof_zak2')">
+                                        <img class="icon" src="img/prof/Layer.png">
+                                        <span class="cont cont_zak">
+                                            <p class="institution-name">Варадеро</p>
+                                            <p class="work-time">11:00</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="prof_zak2" class="prof_zak2 prof_other main-menu-punkt" hidden="true" style="display: none;">
+                                <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak2','prof_zak')">
+                                    <!--<img style="" src="img/prof/circle-arrow-left.png">-->
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#f89b2f" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                    </svg>
+                                    <p class="main-menu-back-button-label">Заказ (Варадеро) длинное название в 2 строки</p>
+                                </div>
+                                <div id="scroll_zak2" class="main-menu-body">
+                                    <div style="position: relative; width: 100%; height: 100%;">
+                                        <div class="prof_item">
+                                            <img class="icon" src="img/prof/grill.PNG">
+                                            <span class="cont_zak">
+                                                <p class="dish-name">Овощи на гриле</p>
+                                                <p class="dish-info">
+                                                    <span class="price">125грн Х1</span>
+                                                    <span class="summ-price" style="float: right;">125грн</span>
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="prof_item">
+                                            <img class="icon" src="img/prof/grill.PNG">
+                                            <span class="cont_zak">
+                                                <p class="dish-name">Овощи на гриле</p>
+                                                <p class="dish-info">
+                                                    <span class="price">125грн Х1</span>
+                                                    <span class="summ-price" style="float: right;">125грн</span>
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="prof_item">
+                                            <img class="icon" src="img/prof/grill.PNG">
+                                            <span class="cont_zak">
+                                                <p class="dish-name">Овощи на гриле</p>
+                                                <p class="dish-info">
+                                                    <span class="price">125грн Х1</span>
+                                                    <span class="summ-price" style="float: right;">125грн</span>
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="prof_item">
+                                            <img class="icon" src="img/prof/grill.PNG">
+                                            <span class="cont_zak">
+                                                <p class="dish-name">Овощи на гриле</p>
+                                                <p class="dish-info">
+                                                    <span class="price">125грн Х1</span>
+                                                    <span class="summ-price" style="float: right;">125грн</span>
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="prof_item">
+                                            <img class="icon" src="img/prof/grill.PNG">
+                                            <span class="cont_zak">
+                                                <p class="dish-name">Овощи на гриле</p>
+                                                <p class="dish-info">
+                                                    <span class="price">125грн Х1</span>
+                                                    <span class="summ-price" style="float: right;">125грн</span>
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="prof_item">
+                                            <img class="icon" src="img/prof/grill.PNG">
+                                            <span class="cont_zak">
+                                                <p class="dish-name">Овощи на гриле</p>
+                                                <p class="dish-info">
+                                                    <span class="price">125грн Х1</span>
+                                                    <span class="summ-price" style="float: right;">125грн</span>
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="prof_item">
+                                            <img class="icon" src="img/prof/grill.PNG">
+                                            <span class="cont_zak">
+                                                <p class="dish-name">Овощи на гриле</p>
+                                                <p class="dish-info">
+                                                    <span class="price">125грн Х1</span>
+                                                    <span class="summ-price" style="float: right;">125грн</span>
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="prof_item">
+                                            <img class="icon" src="img/prof/grill.PNG">
+                                            <span class="cont_zak">
+                                                <p class="dish-name">Овощи на гриле</p>
+                                                <p class="dish-info">
+                                                    <span class="price">125грн Х1</span>
+                                                    <span class="summ-price" style="float: right;">125грн</span>
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="prof_last_item">
+                                            <img class="icon" src="img/prof/grill.PNG">
+                                            <span class="cont_zak">
+                                                <p class="dish-name">Овощи на гриле</p>
+                                                <p class="dish-info">
+                                                    <span class="price">125грн Х1</span>
+                                                    <span class="summ-price" style="float: right;">125грн</span>
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div class="all-summ">
+                                            ИТОГО: <span class="allSum">10000 грн.</span>
+                                        </div>
+                                        <a href="order.html" style="text-decoration: none">
+                                            <div id="bottom_mark" class="row text-center">
+                                                <span>Редактировать</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="prof_dialog" class="prof_dialog prof_other main-menu-punkt" hidden="true" style="display: none;">
+                                <div class="prof_item main-menu-back-button" onclick="showItem('prof_dialog','prof_main')">
+                                    <!--<img style="" src="img/prof/circle-arrow-left.png">-->
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#f89b2f" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                    </svg>
+                                    <span class="main-menu-back-button-label">Диалоги</span>
+                                </div>
+                                <div id="scroll_dialog" class="main-menu-body">
+                                    <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь последнее сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь последнее сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь последнее сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь последнее сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь последнее сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь последнее сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь последнее сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь последнее сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_last_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь последнее сообщение.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="prof_mess" class="prof_mess prof_other main-menu-punkt" hidden="true" style="display: none;">
+                                <div class="prof_item main-menu-back-button" onclick="showItem('prof_mess','prof_dialog')">
+                                    <!--<img style="" src="img/prof/circle-arrow-left.png">-->
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#f89b2f" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                    </svg>
+                                    <span class="main-menu-back-button-label">Сообщения</span>
+                                </div>
+                                <div id="scroll_mess" class="main-menu-body">
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_item align-items-vertical">
+                                        <img class="profIMG" src="img/prof/face2.png">
+                                        <div class="cont messages-cont">
+                                            <p class="family">Фамилия</p>
+                                            <p class="name">Имя</p>
+                                            <p class="last_mess_time">16:00</p>
+                                        </div>
+                                        <div class="last_mess">
+                                            Здесь какое-то сообщение.
+                                        </div>
+                                    </div>
+                                    <div class="prof_last_item">
+                                        <form action="" method="">
+                                            <textarea rows="3" cols="33" name="text"></textarea>
+                                            <div class="smile-and-button-block">
+                                                <div class="row row-without-margin">
+                                                    <div class="col-xs-6 col-lg-6 col-without-padding">
+                                                        <span class="peoplb"><img src="img/prof/peoplb.png"></span>
+                                                        <span class="sendf"><img src="img/prof/paperclip.png"></span>
+                                                    </div>
+                                                    <div class="col-xs-6 col-lg-6 col-without-padding text-right">
+                                                        <span class="smiles"><img src="img/prof/smiles.png"></span>
+                                                        <span class="submit">Отправить</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="prof_alert" class="prof_alert prof_other main-menu-punkt" hidden="true" style="display: none;">
+                                <div class="prof_item main-menu-back-button" onclick="showItem('prof_alert','prof_main')">
+                                    <!--<img style="" src="img/prof/circle-arrow-left.png">-->
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#f89b2f" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                    </svg>
+                                    <span class="main-menu-back-button-label">Уведомления</span>
+                                </div>
+                                <div id="scroll_alert" class="main-menu-body">
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kalendar.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">Вас пригласили на мероприятие в ресторан</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/zvonok.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">Ваш заказ успешно подтвержден.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kniga.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kolokol.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">День рождения у Светы!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kniga.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kolokol.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">День рождения у Светы!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kniga.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-last-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kolokol.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">День рождения у Светы!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kniga.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kolokol.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">День рождения у Светы!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kniga.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-last-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kolokol.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">День рождения у Светы!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kniga.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kolokol.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">День рождения у Светы!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kniga.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prof-last-item-notice">
+                                        <div class="alert_time" align="right">11:00</div>
+                                        <div class="row row-without-margin notice-body align-items-vertical">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <img src="img/prof/kolokol.png">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <div class="alert_msg">День рождения у Светы!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
 
-        <!-- nav menu -->
-        <div class="nav_main" id="menu-top">
-            <ul class="nav_main">
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="menu.html">Меню</a>
-                </li>
-                <li>
-                    <a href="dishes.html">Схема заведения</a>
-                </li>
-                <li>
-                    <a href="innerdish.html">Новости</a>
-                </li>
-                <li>
-                    <a href="#">О ресторане</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-
-        </div>
-
-        <div class="" id="menu">
-            <ul class="nav_main">
-                <div class="dropdown">
-                    <button onclick="dropdownMenu()" class="dropbtn"></button>
-                    <div id="myDropdown" class="dropdown-content">
+            <!-- nav menu -->
+            <div class="nav_main" id="menu-top">
+                <ul class="nav_main">
+                    <li>
                         <a href="#">Главная</a>
+                    </li>
+                    <li>
                         <a href="menu.html">Меню</a>
-                        <a href="dishes.html">Схема заведения</a>
-                        <a href="innerdish.html">Новости</a>
+                    </li>
+                    <li>
+                        <a href="order.html">Схема заведения</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
                         <a href="#">О ресторане</a>
+                    </li>
+                    <li>
                         <a href="#">Контакты</a>
-                    </div>
-                </div>
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="menu.html">Меню</a>
-                </li>
-                <li>
-                    <a href="dishes.html">Схема заведения</a>
-                </li>
-                <li>
-                    <a href="innerdish.html">Новости</a>
-                </li>
-                <li>
-                    <a href="#">О ресторане</a>
-                </li>
-                <li class="hide_last_li">
-                    <a href="#">Контакты</a>
-                </li>
-                <!--&nbsp;-->
-            </ul>
-        </div>
-    </header>
+                    </li>
+                </ul>
 
-        <div class="container">
+            </div>
+
+            <div class="" id="menu">
+                <ul class="nav_main">
+                    <div class="dropdown">
+                        <button onclick="dropdownMenu()" class="dropbtn"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Главная</a>
+                            <a href="menu.html">Меню</a>
+                            <a href="order.html">Схема заведения</a>
+                            <a href="#">Новости</a>
+                            <a href="#">О ресторане</a>
+                            <a href="#">Контакты</a>
+                        </div>
+                    </div>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Меню</a>
+                    </li>
+                    <li>
+                        <a href="order.html">Схема заведения</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">О ресторане</a>
+                    </li>
+                    <li class="hide_last_li">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!--&nbsp;-->
+
+        <!--<div class="container">
             <div class="row">
                 <div class="col-xs-12"></div>
             </div>
-        </div>
+        </div>-->
         <!-- TiltedContentSlideshow -->
         <div class="slideshow" id="slideshow">
-            <ol class="slides" id="TiltedContentSlideshow">
+            <ol class="slides">
                 <li class="current">
                     <div class="description brown bold">
                         <h2 class="brown">
@@ -564,8 +1324,8 @@
                         <p>*При условии заказа более чем на 200 грн. на одного человека</p>
                     </div>
                     <div class="tiltview col">
-                        <a href="#"><img class="lazy" data-original="img/food_1.png" /></a>
-                        <!-- <a href="https://tsovet.com/"><img src="img/2_screen.jpg"/></a> -->
+                        <a href="#"><img class="lazy" src="img/food_1.png" /></a>
+                         <!--<a><img src="/img/icons/basket.png"/></a>--> 
                     </div>
                 </li>
                 <li>
@@ -574,8 +1334,8 @@
                         <p>We are using 12 different animations for showing and hiding the items of a slide. The animations are defined by randomly adding data-attributes called <code>data-effect-in</code> and <code>data-effect-out</code> for every slide. </p>
                     </div>
                     <div class="tiltview col">
-                        <a href="http://pexcil.com/"><img class="lazy" data-original="img/TiltedContentSlideshow/3_mobile.jpg" /></a>
-                        <!-- <a href="http://foodsense.is/"><img src="img/4_mobile.jpg"/></a> -->
+                        <a href="http://pexcil.com/"><img class="lazy" src="img/TiltedContentSlideshow/1_mobile.jpg" /></a>
+                        <!--<a><img src="/img/icons/basket.png" /></a>-->
                     </div>
                 </li>
                 <li>
@@ -584,20 +1344,19 @@
                         <p>The perspective view is achieved by adding a perspective value to the slide list item and tilting a division that contains the two screenshots.</p>
                     </div>
                     <div class="tiltview col">
-                        <a href="http://minimalmonkey.com/"><img class="lazy" data-original="img/TiltedContentSlideshow/5_screen.jpg" /></a>
-                        <!-- <a href="http://www.herschelsupply.com/"><img src="img/6_screen.jpg"/></a> -->
+                        <a href="http://minimalmonkey.com/"><img class="lazy" src="img/TiltedContentSlideshow/2_mobile.jpg" /></a>
+                        <!--<a><img src="/img/icons/basket.png"/></a>-->
                     </div>
                 </li>
             </ol>
         </div><!-- /slideshow -->
         <!-- TiltedContentSlideshow end-->
-
         <!--dishes_img_left_x_4 BEGIN-->
         <section class="dishes_img_left_x_4 container container-fluid">
             <div class="row">
                 <div class="dish col-md-3 col-sm-6">
                     <h4><a>Название блока</a></h4>
-                    <img data-original="img/img_food_1.png" alt="" class="img-responsive lazy" />
+                    <img src="img/img_food_1.png" alt="" class="img-responsive lazy" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                         Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -606,7 +1365,7 @@
                 </div>
                 <div class="dish col-md-3 col-sm-6">
                     <h4><a>Название блока</a></h4>
-                    <img data-original="img/img_food_1.png" alt="" class="img-responsive lazy" />
+                    <img src="img/img_food_1.png" alt="" class="img-responsive lazy" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                         Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -615,7 +1374,7 @@
                 </div>
                 <div class="dish col-md-3 col-sm-6">
                     <h4><a>Название блока</a></h4>
-                    <img data-original="img/img_food_1.png" alt="" class="img-responsive lazy" />
+                    <img src="img/img_food_1.png" alt="" class="img-responsive lazy" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                         Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -624,7 +1383,7 @@
                 </div>
                 <div class="dish col-md-3 col-sm-6">
                     <h4><a>Название блока</a></h4>
-                    <img data-original="img/img_food_1.png" alt="" class="img-responsive lazy" />
+                    <img src="img/img_food_1.png" alt="" class="img-responsive lazy" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                         Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -637,7 +1396,7 @@
             <div class="row">
                 <div class="dish col-md-3 col-sm-6">
                     <h4><a>Название блока</a></h4>
-                    <img data-original="img/img_food_2.png" alt="" class="img-responsive lazy" />
+                    <img src="img/img_food_2.png" alt="" class="img-responsive lazy" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                         Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -646,7 +1405,7 @@
                 </div>
                 <div class="dish col-md-3 col-sm-6">
                     <h4><a>Название блока</a></h4>
-                    <img data-original="img/img_food_2.png" alt="" class="img-responsive lazy" />
+                    <img src="img/img_food_2.png" alt="" class="img-responsive lazy" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                         Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -655,7 +1414,7 @@
                 </div>
                 <div class="dish col-md-3 col-sm-6">
                     <h4><a>Название блока</a></h4>
-                    <img data-original="img/img_food_2.png" alt="" class="img-responsive lazy" />
+                    <img src="img/img_food_2.png" alt="" class="img-responsive lazy" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                         Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -664,7 +1423,7 @@
                 </div>
                 <div class="dish col-md-3 col-sm-6">
                     <h4><a>Название блока</a></h4>
-                    <img data-original="img/img_food_2.png" alt="" class="img-responsive lazy" />
+                    <img src="img/img_food_2.png" alt="" class="img-responsive lazy" />
                     <span>
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                         Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -680,7 +1439,7 @@
                 <div class="col-md-4 col-sm-4">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_2.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_2.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -691,7 +1450,7 @@
                 <div class="col-md-4 col-sm-4">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_2.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_2.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -703,7 +1462,7 @@
                 <div class="col-md-4 col-sm-4">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_2.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_2.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -719,7 +1478,7 @@
                 <div class="col-md-4 col-sm-4">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_3.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_3.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -731,7 +1490,7 @@
                 <div class="col-md-4 col-sm-4">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_3.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_3.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -742,7 +1501,7 @@
                 <div class="col-md-4 col-sm-4">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_3.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_3.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -761,7 +1520,7 @@
                 <div class="col-sm-6">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_4.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_4.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -774,7 +1533,7 @@
                 <div class="col-sm-6">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_4.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_4.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -795,7 +1554,7 @@
                 <div class="col-sm-6">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_4.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_4.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -808,7 +1567,7 @@
                 <div class="col-sm-6">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_4.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_4.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -829,7 +1588,7 @@
                 <div class="col-sm-12">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_6.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_6.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -861,7 +1620,7 @@
                 <div class="col-sm-12">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_6.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_6.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -939,7 +1698,6 @@
         <!--dishes_video_right END-->
 
         <section class="gallery">
-            <!--<p class="bold text-center">Gallery</p>-->
             <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1180px; height: 500px; overflow: hidden; visibility: hidden; background-color: transparent">
                 <!-- Loading Screen -->
                 <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -948,63 +1706,63 @@
                 </div>
                 <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1180px; height: 500px; overflow: hidden;">
                     <div data-p="2520" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/01.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/01.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-01.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/02.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/02.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-02.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/03.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/03.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-03.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/04.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/04.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-04.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/05.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/05.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-05.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/06.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/06.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-06.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/07.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/07.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-07.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/08.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/08.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-08.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/09.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/09.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-09.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/10.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/10.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-10.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/11.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/11.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-11.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/12.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/12.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-12.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/11.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/11.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-11.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/12.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/12.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/thumb-12.jpg" />
                     </div>
                     <div data-p="210.00" style="display: none;">
-                        <img class="lazy" data-u="image" data-original="img/slider/food_1.jpg" />
+                        <img class="lazy" data-u="image" src="img/slider/food_1.jpg" />
                         <img class="lazy" data-u="thumb" src="img/slider/food_1.jpg" />
                     </div>
                     <a data-u="add" href="http://www.jssor.com/artyomgolubov27/image-gallery.slider" style="display:none">Image Gallery</a>
@@ -1042,7 +1800,7 @@
                 <div class="col-sm-12">
                     <div class="dish">
                         <h4><a>Название блока</a></h4>
-                        <img data-original="img/img_food_6.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_6.png" alt="" class="img-responsive lazy" />
                         <span>
                             Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                             Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
@@ -1091,7 +1849,7 @@
                             Leo porta mattis mauris non dolor nunc, id congue odio donec tellus nisl, semper id consectetur vitae, dapibus dictum nisl morbi sed augue purus sed dictum diam convallis tortor interdum.
                             Volutpat phasellus dapibus arcu sit amet neque vulputate sed elementum orci fringilla in hac habitasse platea dictumst maecenas ut dui diam curabitur adipiscing vestibulum libero, nec varius dui pulvinar eget.
                         </span>
-                        <img data-original="img/img_food_6.png" alt="" class="img-responsive lazy" />
+                        <img src="img/img_food_6.png" alt="" class="img-responsive lazy" />
                         <a href="#" class="discription brown bold">Подробнее</a>
                     </div>
                 </div>
@@ -1201,8 +1959,8 @@
                     <div class="col-md-3 col-sm-6">
                         <h3 class="brown">Наши партнеры</h3>
                         <div class="footer_img">
-                            <img class="lazy" data-original="/img/brands/Semiramis.png" alt="" />
-                            <img class="lazy" data-original="/img/brands/tvrandot.png" alt="" />
+                            <img class="lazy" src="/img/brands/Semiramis.png" alt="" />
+                            <img class="lazy" src="/img/brands/tvrandot.png" alt="" />
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -1238,34 +1996,37 @@
                 </div>
             </div>
         </footer>
-        
+
         <div title="Вернуться к началу" id="toTop"><img src="img/icons/up_button.png" alt="Alternate Text" /></div>
-        
-    <script src="libs/jquery/jquery-2.1.4.min.js"></script>
+    </div>
 
-    <script src="libs/jquery_lazyload-1.9.7/jquery.lazyload.min.js"></script>
 
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jssor.slider.min.js"></script>
-    <script src="js/jssor_slider_init.js"></script>
+        <!--<script src="libs/jquery_lazyload-1.9.7/jquery.lazyload.min.js"></script>-->
 
-    <!-- TiltedContentSlideshow -->
-    <!--<link rel="stylesheet" type="text/css" href="css/TiltedContentSlideshow/normalize.css" />-->
-    <link rel="stylesheet" type="text/css" href="css/TiltedContentSlideshow/component.css" />
-    <script src="libs/bootstrap/js/modernizr.custom.js"></script>
-    <script src="js/TiltedContentSlideshow/modernizr.custom.js"></script>
-    <script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jssor.slider.min.js"></script>
+        <script src="js/jssor_slider_init.js"></script>
+        <script>
                 jssor_1_slider_init();
-    </script>
-    <script src="js/TiltedContentSlideshow/classie.js"></script>
-    <script src="js/TiltedContentSlideshow/tiltSlider.js"></script>
-    <script>
+        </script>
+
+        <!-- TiltedContentSlideshow -->
+        <!--<link rel="stylesheet" type="text/css" href="css/TiltedContentSlideshow/normalize.css" />-->
+        <link rel="stylesheet" type="text/css" href="css/TiltedContentSlideshow/component.css" />
+        <!--<script src="libs/bootstrap/js/modernizr.custom.js"></script>-->
+        <script src="js/TiltedContentSlideshow/modernizr.custom.js"></script>
+
+        <script src="js/TiltedContentSlideshow/classie.js"></script>
+        <script src="js/TiltedContentSlideshow/tiltSlider.js"></script>
+        <script>
             new TiltSlider(document.getElementById('slideshow'));
-    </script>
+        </script>
 
         <script src="js/common.js"></script>
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTFFbncVHGccafJakh0f7RE3S109fWm9w&signed_in=true&callback=initMap">
         </script>
+    
+        <script src="js/user_block.js"></script>
 </body>
 </html>

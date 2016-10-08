@@ -94,8 +94,7 @@
 		// show a new item when clicking the navigation "dots"
 		this.navDots.forEach( function( dot, idx ) {
 			dot.addEventListener( 'click', function() {
-			    if (idx !== self.current) {
-			        console.log('current');
+				if( idx !== self.current ) {
 					self._showItem( idx );
 				}
 			} );
@@ -103,13 +102,12 @@
 	}
 
 	TiltSlider.prototype._showItem = function( pos ) {
-	    if (this.isAnimating) {
-	        //console.log('isAnimating = ' + this.isAnimating);
-			//return false;
+		if( this.isAnimating ) {
+			return false;
 		}
 		this.isAnimating = true;
 
-		classie.removeClass(this.navDots[this.current], 'current');
+		classie.removeClass( this.navDots[ this.current ], 'current' );
 
 		var self = this,
 			// the current item
@@ -137,8 +135,7 @@
 			animEndCurrentCnt = 0, animEndNextCnt = 0,
 			// check function for the end of each animation
 			isFinished = function() {
-			    ++cntAnims;
-			    //console.log(' cntAnims = ' + cntAnims);
+				++cntAnims;
 				if( cntAnims === 2 ) {
 					self.isAnimating = false;
 				}
@@ -147,7 +144,7 @@
 			onEndAnimationCurrentItem = function() {
 				++animEndCurrentCnt;
 				var endFn = function() {
-					classie.removeClass( currentItem, 'hide' );
+					classie.removeClass( currentItem, 'hide-tc' );
 					classie.removeClass( currentItem, 'current' );
 					isFinished();
 				};
@@ -178,7 +175,7 @@
 				}
 			};
 
-		classie.addClass( currentItem, 'hide' );
+		classie.addClass( currentItem, 'hide-tc' );
 		classie.addClass( nextItem, 'show' );
 
 		if( isSupported ) {
