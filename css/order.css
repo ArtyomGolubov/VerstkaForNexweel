@@ -95,7 +95,7 @@
     border-top-right-radius: 0px !important;
 }
 
-.order .panel:first-of-type {
+.order .panel:first-child {
     border-top-left-radius: 5px !important;
     border-top-right-radius: 5px !important;
 }

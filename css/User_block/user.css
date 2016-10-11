@@ -67,7 +67,10 @@
     top: 47px;
     border-radius: 6px;
     border-top-right-radius: 0px;
-    border: 1px solid #ececec;
+    /*border: 1px solid #ececec;*/
+    border-bottom: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
     /*overflow: auto;*/
     background-color: rgba(255,255,255,1);
     width: auto;
@@ -75,6 +78,10 @@
     font-size: small;
     z-index: 12;
     box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
+}
+
+.prof_item.main-menu-back-button {
+
 }
 
 #scroll_alert > div {
@@ -143,8 +150,9 @@
 }
 
 .click, #prof_icon {
-    font-size: 12px;
-    color: #a2a2a2;
+    font-size: 13px;
+    color: #512c15;
+    font-family: Roboto-Regular;
     padding-left: 15px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -186,6 +194,13 @@
     margin-bottom: 15px;
 }
 
+.prof-main-menu-block > div {
+
+        font-size: 13px;
+    color: #512c15;
+    font-family: Roboto-Regular;
+}
+
 #prof_zak,
 #prof_zak2,
 #prof_mess,
@@ -194,6 +209,15 @@
     max-height: 400px;
     width: 320px;
     margin-top: -3px;
+}
+
+#prof_zak div *,
+#prof_zak2 div *,
+#prof_mess div *,
+#prof_dialog div *,
+#prof_alert  div *{
+    color: #512c15;
+    font-family: Roboto-Regular;
 }
 
 .cont {
@@ -266,6 +290,7 @@
 
 .last_mess_time {
     font-size: 12px;
+    color: #f99b30 !important;
 }
 
 .last_mess {
@@ -274,6 +299,7 @@
     vertical-align: middle;
     height: 100%;
     width: 60%;
+    color: #737373 !important;
 }
 
 .alert_msg {
@@ -292,7 +318,7 @@
     background-color: #512c15;
     padding: 5px;
     border-radius: 5px;
-    color: #ffffff;
+    color: #ffffff !important;
     margin-left: 1%;
 }
 
@@ -322,6 +348,12 @@
         border-radius: 5px;
     }
 
+#scroll_alert .prof-item-notice, 
+#scroll_alert .prof-last-item-notice{
+    height: 55px;
+    padding: 10px;
+}
+
 /* common */
 .align-items-vertical {
     display: flex;
@@ -346,7 +378,7 @@
 }*/
 
 /*Scroll styles*/
-@media only screen and (min-device-width: 768px) {
+/*@media only screen and (min-device-width: 768px) {
     #scroll_container {
         position: absolute;
         overflow-y: scroll;
@@ -374,30 +406,16 @@
         background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
         background-attachment: local, local, scroll, scroll;
     }
-}
+}*/
 
 /* общая ширина ползунка */
-::-webkit-scrollbar {
+#scroll_alert::-webkit-scrollbar,
+#scroll_zak::-webkit-scrollbar,
+#scroll_zak2::-webkit-scrollbar,
+#scroll_dialog::-webkit-scrollbar,
+#scroll_mess::-webkit-scrollbar {
     width: 6px;
     height: 6px;
-}
-
-/* ползунок */
-::-webkit-scrollbar-thumb {
-    border-width: 1px 1px 1px 2px;
-    border-color: #e5e5e5;
-    background-color: rgba(229, 229, 229, 0.7);
-    border-radius: 10px;
-}
-
-/* Полоса прокрутки в неактивном состоянии без границы */
-::-webkit-scrollbar-track {
-    border-width: 0;
-}
-
-/* При наведении курсора на полосу прокрутки, делаем ее темнее */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #ddd;
 }
 
 .col-without-padding {
