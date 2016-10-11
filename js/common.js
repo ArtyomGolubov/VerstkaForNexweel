@@ -7,12 +7,6 @@ $(window).on('load', function () {
     $('#content').show();
 });
 
-//$(function () {
-//    $("img.lazy").lazyload({
-//        effect: "fadeIn"
-//    });
-//});
-
 
 //(function () {
 
@@ -52,26 +46,28 @@ $(window).ready(function () {
         //------#menu-top-------------------------
 
         window.addEventListener('scroll', Ascroll, false);
-        document.body.addEventListener('scroll', Ascroll, false);
+        //document.body.addEventListener('scroll', Ascroll, false);
 
-        SizeMenuInit();
         Ascroll();
+        SizeMenuInit();
         CheckDropdownMenuBtn();
         ChangeMainMenu();
     }, 2000);
 });
 
 $(window).bind('orientationchange', function (e) {
-    console.log('orientationchange');
-    SizeMenuInit();
-    Ascroll();
-    CheckDropdownMenuBtn();
-    ChangeMainMenu();
+    
+        console.log('orientationchange');
+        Ascroll();
+        SizeMenuInit();
+        ChangeMainMenu();
+        CheckDropdownMenuBtn();
 });
 
 
 //---- #menu -------------------------------
 function CheckDropdownMenuBtn() {
+    //console.log('CheckDropdownMenuBtn() = ' + $('#menu li:hidden').length);
     if ($('#menu li:hidden').length > 0) {
         $('.dropdown').addClass('show');
     }
@@ -135,12 +131,13 @@ $(window).resize(function () {
 });
 
 //---------------------------------------
-
+// если пункты меню ушли вниз, то перемещаем их в выпадающий список.
 function SizeMenuInit() {
     var top = $('#menu li').eq(0).offset().top;
 
     $('#menu li').each(function (index) {
         if (top < $(this).offset().top) {
+            console.log('orientationchange = ' + $(this).text());
             // перемещаем ссылку в дроп меню
             $('.dropdown-content a').each(function (i) {
                 if (index == i) {
@@ -172,7 +169,7 @@ toggle between hiding and showing the dropdown content */
 function dropdownMenu() {
     document.getElementById("myDropdown").classList.toggle("show");
     if ($('#myDropdown').is('.show')) {
-        console.log('border');
+        //console.log('border');
         $('.nav_main').css('border-radius', '5px 5px 0 5px');
     }
     else {
@@ -201,7 +198,6 @@ $(window).ready(function () {
 
 // ------------ call me -----------------------
 $(document).ready(function () { // вся мaгия пoсле зaгрузки стрaницы
-    console.log('callme');
     $('#callback').click(function (event) { // лoвим клик пo ссылки с id="go"
         event.preventDefault(); // выключaем стaндaртную рoль элементa
         $('#overlay').fadeIn(200, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
@@ -253,37 +249,6 @@ function toggleBounce() {
 }
 
 $(function () {
-    //$(window).ready( function() {
-    //    $(window).scroll(function () {
-    //        if ($(this).scrollTop() != 0) {
-    //            $('#toTop').fadeIn();
-    //        } else {
-    //            $('#toTop').fadeOut();
-    //        }
-    //    });
-    //    $('#toTop').click(function () {
-    //        $('body,html').animate({ scrollTop: 0 }, 800);
-    //    });
-    //});
-
-
-
-    //var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
-    //var delay = 1000; // Задержка прокрутки
-    //$(document).ready(function () {
-    //    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
-    //        /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
-    //        if ($(this).scrollTop() > top_show) $('#toTop').fadeIn();
-    //        else $('#toTop').fadeOut();
-    //    });
-    //    $('#toTop').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
-    //        /* Плавная прокрутка наверх */
-    //        $('body, html').animate({
-    //            scrollTop: 0
-    //        }, delay);
-    //    });
-    //});
-
     $(window).scroll(function () {
         if ($(this).scrollTop() != 0) {
             $('#toTop').fadeIn();

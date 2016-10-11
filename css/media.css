@@ -134,6 +134,12 @@
     #head_info {
         width: 35%;
     }*/
+
+    .dish_block .container  {
+        display: flex;
+        justify-content: center;
+        width: 500px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -187,6 +193,18 @@
     .alerts, .user_orders, .user_messages, .user_dialog, .user_single_order {
         width: 100%;
     }
+
+    .dish_block .container {
+        /*display: flex;
+        justify-content: center;*/
+        width: 220px;
+    }
+
+    .prof_info,
+    .prof_zak, .prof_zak2, .prof_dialog, .prof_mess, .prof_alert {
+        width: 100% !important;
+    }
+
 }
 
 /* Custom, iPhone Retina */

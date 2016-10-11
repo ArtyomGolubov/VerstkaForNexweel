@@ -7,7 +7,7 @@
 .food_item {
     position: relative;
     display: inline-block;
-    margin: 5px 12px 5px 0;
+    margin: 5px 6px 5px 6px;
 }
 
 .food_item_img {
@@ -73,11 +73,25 @@
     .work_block.bottom {
         bottom: 0px;
         width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .work_block.bottom::before {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 
     .work_block.top {
         top: 0px;
         width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px
+    }
+
+    .work_block.top::before {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
 
     .work_block.top_left80 {
