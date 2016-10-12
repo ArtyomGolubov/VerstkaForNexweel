@@ -21,6 +21,7 @@ function Ascroll() {
         R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('footer').getBoundingClientRect().top + 0);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
     var dropdown = $('.dropdown');
     if ((Ra.top - P) <= 0) {
+        // кусок для  остановки фиксированного меню перед футером.
         //if ((Ra.top - P) <= R) {
         //    console.log('granica');
         //    b.className = 'stop';
@@ -41,33 +42,34 @@ function Ascroll() {
 }
 
 $(window).ready(function () {
-    setTimeout(function () {
+        // здесь блокирую установку курсора в инпут с количеством на странице блюда
         $("input[name^='touchspin']").attr("readonly", true);
-        //------#menu-top-------------------------
 
+        // Добавляем обработчик, в котором узнаем: делать фиксированное навигационное меню или нет.
         window.addEventListener('scroll', Ascroll, false);
-        //document.body.addEventListener('scroll', Ascroll, false);
 
         Ascroll();
+        // перемещаем пункты меню в выпадающее меню, если они угли вниз.
         SizeMenuInit();
-        CheckDropdownMenuBtn();
+        // перемещаем пункты меню в выпадающий список, если они рядом с правой границей монитора.
         ChangeMainMenu();
-    }, 2000);
+        // Проверяем нужно ли показывать кнопку выпадающего списка.
+        CheckDropdownMenuBtn();       
 });
 
 $(window).bind('orientationchange', function (e) {
-    
-        console.log('orientationchange');
+    $(window).ready(function () {
         Ascroll();
         SizeMenuInit();
         ChangeMainMenu();
         CheckDropdownMenuBtn();
+    });
 });
+
 
 
 //---- #menu -------------------------------
 function CheckDropdownMenuBtn() {
-    //console.log('CheckDropdownMenuBtn() = ' + $('#menu li:hidden').length);
     if ($('#menu li:hidden').length > 0) {
         $('.dropdown').addClass('show');
     }
@@ -126,8 +128,9 @@ function ChangeMainMenu() {
 
 //---- REsize #menu -------------------------------
 $(window).resize(function () {
-    CheckDropdownMenuBtn();
     ChangeMainMenu();
+    //console.log('resize = ' + $('#menu li:hidden').length);
+    CheckDropdownMenuBtn();
 });
 
 //---------------------------------------
@@ -137,7 +140,7 @@ function SizeMenuInit() {
 
     $('#menu li').each(function (index) {
         if (top < $(this).offset().top) {
-            console.log('orientationchange = ' + $(this).text());
+            //console.log('orientationchange = ' + $(this).text());
             // перемещаем ссылку в дроп меню
             $('.dropdown-content a').each(function (i) {
                 if (index == i) {
