@@ -469,7 +469,7 @@
     width: 50px;
     top: -5px;
     left: 150px;
-    z-index: 101;
+    z-index: 9;
 }
 
     #call_me form {
@@ -531,7 +531,7 @@
     }
 
 /*    dropdown  menu*/
-.dropbtn {
+.dropbtn, .menu_btn {
     background: url(/img/icons/op-menu.png) no-repeat center;
     color: white;
     padding: 16px;
@@ -540,13 +540,15 @@
     cursor: pointer;
     margin: 8px 0 8px 0px;
     outline: 0;
+    border-radius: 5px;
 }
 
-    .dropbtn:hover, .dropbtn:focus {
+    .dropbtn:hover, .dropbtn:focus,
+    .menu_btn:hover, .menu_btn:focus {
         background-color: #512c15;
     }
 
-    .dropbtn:active {
+    .dropbtn:active, .menu_btn:active {
         background-color: #7a5e4b;
     }
 
@@ -587,9 +589,77 @@
     color: #f89b2f;
 }
 
-/*.show {
-    display: block;
-}*/
+.mob_nav_menu_btn {
+    display: none;
+    background-color: #512c15;
+    padding: 0 5px;
+    top: 0px;
+}
+
+.menu_mob_btn_container {
+    /*border-left: 1px solid #512c15;*/
+    height: 100%;
+    width: 50px;
+    padding-right: 5px;
+}
+
+.mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #512c15;
+    padding: 0 5px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    z-index: 11;
+    -webkit-transition: left 0.3s ease-in-out;
+    -moz-transition: left 0.3s ease-in-out;
+    -ms-transition: left 0.3s ease-in-out;
+    -o-transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
+}
+
+.mobile-menu li {
+    /*margin: 15px 0;*/
+    list-style: none;
+    border-bottom: 1px solid #7a5e4b;
+    border-right: 1px solid #7a5e4b;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+}
+
+.mobile-menu li>a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.mobile-menu ul {
+    width: 100%;
+    padding: 0;
+}
+
+body.mob-act {
+    overflow: hidden;
+}
+
+.nav_menu_mob_border{
+    display: none;
+    width: 100%;
+    height: 10px;
+    margin: 20px 0;
+    background: linear-gradient(#7a5e4b, #512c15);
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
+}
+
 /*-------------------*/
 
 /*NAVBAR END*/

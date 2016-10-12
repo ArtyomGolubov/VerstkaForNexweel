@@ -140,6 +140,26 @@
         justify-content: center;
         width: 500px;
     }
+
+     /*--- mob_menu ---*/
+    .mob_nav_menu_btn {
+        display: block;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
+
+    #menu, #menu-top {
+        display: none;
+    }
+
+    body {
+        margin-top: 70px;
+    }
+
+    .nav_menu_mob_border {
+        display: block;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -204,7 +224,6 @@
     .prof_zak, .prof_zak2, .prof_dialog, .prof_mess, .prof_alert {
         width: 100% !important;
     }
-
 }
 
 /* Custom, iPhone Retina */

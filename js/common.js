@@ -14,31 +14,34 @@ $(window).on('load', function () {
 // изменение меню при  прокрутке
 function Ascroll() {
 
-    var a = document.querySelector('#menu'), b = document.querySelector('#menu-top'), P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
-    ChangeMainMenu();
+    if (document.documentElement.clientWidth > 768) {
+        var a = document.querySelector('#menu'), b = document.querySelector('#menu-top'), P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
+        ChangeMainMenu();
 
-    var Ra = a.getBoundingClientRect(),
-        R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('footer').getBoundingClientRect().top + 0);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
-    var dropdown = $('.dropdown');
-    if ((Ra.top - P) <= 0) {
-        // кусок для  остановки фиксированного меню перед футером.
-        //if ((Ra.top - P) <= R) {
-        //    console.log('granica');
-        //    b.className = 'stop';
-        //    //b.style.top = -R + 'px';
-        //    b.style.display = "none";
-        //} else {
+        var Ra = a.getBoundingClientRect(),
+            R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('footer').getBoundingClientRect().top + 0);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
+        var dropdown = $('.dropdown');
+        if ((Ra.top - P) <= 0) {
+            // кусок для  остановки фиксированного меню перед футером.
+            //if ((Ra.top - P) <= R) {
+            //    console.log('granica');
+            //    b.className = 'stop';
+            //    //b.style.top = -R + 'px';
+            //    b.style.display = "none";
+            //} else {
             b.style.display = "block";
             //---dropdown menu-----             
             dropdown.css('position', 'fixed');
-        //}
-    } else {
-        b.style.display = "none";
-        dropdown.css('position', 'relative');
+            //}
+        } else {
+            b.style.display = "none";
+            dropdown.css('position', 'relative');
+        }
     }
-    window.addEventListener('resize', function () {
-        a.children[0].style.width = getComputedStyle(a, '').width
-    }, false);
+    //window.addEventListener('resize', function () {
+    //    console.log('111');
+    //    a.children[0].style.width = getComputedStyle(a, '').width
+    //}, false);
 }
 
 $(window).ready(function () {
@@ -269,76 +272,18 @@ $(function () {
     });
 });
 
-
-// user
-//function Login() {
-//    $('.user_block').toggle();
-//    $('.user_block_autorise').css('display', 'flex');
-//}
-
-//function user_menu() {
-//    $('.user_menu').toggle();
-//    $('.alerts').hide();
-//    $('.user_orders').hide();
-//    $('.user_messages').hide();
-//    $('.user_single_order').hide();
-//    $('.user_dialog').hide();
-//}
-
-//function logout() {
-//    $('.user_menu').toggle();
-//    $('.user_block_autorise').css('display', 'none');
-//    $('.user_block').toggle();
-//}
-
-//function userAlertsShow() {
-//    $('.user_menu').toggle();
-//    $('.alerts').toggle();
-//}
-
-//function userAlertsHide() {
-//    $('.alerts').toggle();
-//    $('.user_menu').toggle();
-//}
-
-//function userOrdersShow() {
-//    $('.user_menu').toggle();
-//    $('.user_orders').toggle();
-//}
-
-//function userOrdersHide() {
-//    $('.user_orders').toggle();
-//    $('.user_menu').toggle();
-//}
-
-//function userMessagesShow() {
-//    $('.user_menu').toggle();
-//    $('.user_messages').toggle();
-//}
-
-//function userMessagesHide() {
-//    $('.user_messages').toggle();
-//    $('.user_menu').toggle();
-//}
-
-//function userDialogShow() {
-//    $('.user_dialog').toggle();
-//    $('.user_messages').toggle();
-//}
-
-//function userDialogHide() {
-//    $('.user_messages').toggle();
-//    $('.user_dialog').toggle();
-//}
-
-//function userSingleOrderShow() {
-//    $('.user_single_order').toggle();
-//    $('.user_orders').toggle();
-//}
-
-//function userSingleOrderHide() {
-//    $('.user_orders').toggle();
-//    $('.user_single_order').toggle();
-//}
-//-------------------------------------------
+function MobMenuToggle() {
+    var menu = $('.mobile-menu');
+    var body = $('body');
+    console.log('MobMenuToggle() = ' + menu.css('left'));
+ 
+    if (menu.css('left') == '0px') {
+        menu.css('left', '-100%');
+        body.css('overflow', 'auto');
+    }
+    else {
+        menu.css('left', '0px');
+        body.css('overflow', 'hidden');
+    }
+}
 
