@@ -3066,7 +3066,7 @@ jssor_1_slider_init = function () {
         $ThumbnailNavigatorOptions: {
             $Class: $JssorThumbnailNavigator$,
             $Cols: 15,
-            $SpacingX: 8,
+            $SpacingX: 5,
             $SpacingY: 8,
             $Align: 360
         }
