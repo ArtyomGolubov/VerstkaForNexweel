@@ -143,7 +143,9 @@
 
      /*--- mob_menu ---*/
     .mob_nav_menu_btn {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
         width: 100%;
         position: fixed;
         z-index: 10;
@@ -158,6 +160,14 @@
     }
 
     .nav_menu_mob_border {
+        display: block;
+    }
+
+    #user_block {
+        display: none;
+    }
+
+    #user_block_in_menu {
         display: block;
     }
 }
@@ -220,9 +230,9 @@
         width: 220px;
     }
 
-    .prof_info,
-    .prof_zak, .prof_zak2, .prof_dialog, .prof_mess, .prof_alert {
-        width: 100% !important;
+    .dishes_x_1_left_img img, .dishes_x_1_right_img img {
+        max-width: 300px !important;
+        margin: 10px 0;
     }
 }
 
@@ -246,7 +256,13 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    #user_block {
+        display: block;
+    }
 
+    #user_block_in_menu {
+        display: none;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -272,5 +288,20 @@
         width: 1180px;
         margin: auto;
         padding: 0;
+    }
+}
+
+
+/* ---- custom -----------*/
+/*iphone 5 plus*/
+@media only screen and (max-height : 414px) {
+    .main-menu-body {
+        height: 220px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .prof_info, .prof_zak, .prof_zak2, .prof_dialog, .prof_mess, .prof_alert {
+        width: 100% !important;
     }
 }

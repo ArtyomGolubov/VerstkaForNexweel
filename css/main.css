@@ -554,6 +554,10 @@
         background-color: #7a5e4b;
     }
 
+.menu_btn.close {
+    background-image: url(/img/icons/op-menu-close.png);
+}
+
 .dropdown {
     display: none;
     position: relative;
@@ -595,7 +599,7 @@
     display: none;
     /*background-color: #5e3c26;*/
     background-color: rgba(94, 60, 38, .8);
-    padding: 0 5px;
+    padding: 0 1px 0 5px;
     top: 0px;
 }
 
@@ -1172,4 +1176,63 @@ a > .glyphicon {
 .result_item img {
     padding-right: 5px;
     padding-left: 57px;
+}
+
+
+
+/*--------------------------------------------*/
+.media_horizontal {
+    display: block;
+    float: none;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+
+.media_horizontal a {
+    width: 500%;
+    height: 100%;
+    position: absolute;
+    left: -200%;
+}
+
+    .media_horizontal a img {
+        display: block;
+        position: absolute;
+        width: auto;
+        height: 220px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+/*-----------------------------------------------*/
+
+.image1180x500 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1180px;
+    height: 500px;
+    background: #ecece0;
+}
+
+.image80x80 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80px;
+    height: 80px;
+    background: #ecece0;
+}
+
+.jssor_image {
+    max-width: 1180px;
+    max-height: 500px;
+    overflow: hidden;
+    height: auto !important;
+    width: auto !important;
 }

@@ -1,5 +1,8 @@
 ﻿
 $(window).on('load', function () {
+
+    console.log('screen = ' + $(window).width());
+
     var preloader = $('#page-preloader'),
         loader = preloader.find('.loader');
     loader.fadeOut();

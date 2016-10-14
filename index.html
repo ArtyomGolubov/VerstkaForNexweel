@@ -58,6 +58,731 @@
 
     <div class="mob_nav_menu_btn">
         <button onclick="MobMenuToggle()" class="menu_btn"></button>
+        <div id="user_block_in_menu">
+            <div id="prof" class="prof ">
+                <div id="prof_icon" class="perc100 prof_icon align-items-vertical">
+                    <img src="img/prof/Layer17.png" class="profIMG"><span class="menu-user-name">Мохитова Юлияюлия</span>
+                </div>
+                <div id="prof_info" class="prof_info main-data-menu-opened" style="display: none;">
+                    <div id="prof_main" class="prof_main" style="display: block;">
+                        <div class="prof-main-menu-block">
+                            <div class="prof_main_item" onclick="showItem('prof_main','prof_zak')">Заказы</div>
+                            <div class="prof_main_item" onclick="showItem('prof_main','prof_dialog')">Сообщения (1234)</div>
+                            <div class="prof_main_item" onclick="showItem('prof_main','prof_alert')">Уведомления (2689)</div>
+                        </div>
+                        <div id="bottom_mark" class="prof_exit row row-without-margin text-center">
+                            Выйти
+                        </div>
+                    </div>
+
+                    <div id="prof_zak" class="prof_zak prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak','prof_main')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#f89b2f" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Заказы</span>
+                        </div>
+
+                        <div id="scroll_zak" class="scroll_zak main-menu-body">
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Очень длинное название заведения в две строки</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_last_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="prof_zak2" class="prof_zak2 prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak2','prof_zak')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#f89b2f" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <p class="main-menu-back-button-label">Заказ (Варадеро) длинное название</p>
+                        </div>
+                        <div id="scroll_zak2" class="main-menu-body">
+                            <div style="position: relative; width: 100%; height: 100%;">
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">135грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_last_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="edit_zak">
+                                    <div class="all-summ">
+                                        ИТОГО: <span class="allSum">10000 грн.</span>
+                                    </div>
+                                    <a href="order.html" style="text-decoration: none">
+                                        <div id="bottom_mark" class="row text-center">
+                                            <span>Редактировать</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prof_dialog" class="prof_dialog prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_dialog','prof_main')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#f89b2f" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Сообщения</span>
+                        </div>
+                        <div id="scroll_dialog" class="main-menu-body">
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_last_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prof_mess" class="prof_mess prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_mess','prof_dialog')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#f89b2f" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Диалог</span>
+                        </div>
+                        <div id="scroll_mess" class="main-menu-body">
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_last_item">
+                                <form action="" method="">
+                                    <textarea rows="3" cols="33" name="text"></textarea>
+                                    <div class="smile-and-button-block">
+                                        <div class="row row-without-margin">
+                                            <div class="col-xs-6 col-lg-6 col-without-padding">
+                                                <span class="peoplb"><img src="img/prof/peoplb.png"></span>
+                                                <span class="sendf"><img src="img/prof/paperclip.png"></span>
+                                            </div>
+                                            <div class="col-xs-6 col-lg-6 col-without-padding text-right">
+                                                <span class="smiles"><img src="img/prof/smiles.png"></span>
+                                                <span class="submit">Отправить</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prof_alert" class="prof_alert prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_alert','prof_main')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#f89b2f" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Уведомления</span>
+                        </div>
+                        <div id="scroll_alert" class="main-menu-body">
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kalendar.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Вас пригласили на мероприятие в ресторан</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/zvonok.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Ваш заказ успешно подтвержден.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-last-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="mobile-menu">
         <ul>
@@ -81,7 +806,8 @@
             </li>
         </ul>
         <div class="menu_mob_btn_container">
-            <div onclick="MobMenuToggle()" class="menu_btn close"></div>
+            <div onclick="MobMenuToggle()" class="menu_btn close">
+            </div>
         </div>
     </div>
 
@@ -1370,64 +2096,94 @@
             </div>
             <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1180px; height: 500px; overflow: hidden;">
                 <div data-p="2520" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/01.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-01.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/01.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-01.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/02.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-02.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/1180x500.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-02.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/03.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-03.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/1920x1080.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-03.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/04.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-04.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/test.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-04.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/05.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-05.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/05.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-05.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/06.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-06.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/06.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-06.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/07.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-07.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/07.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-07.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/08.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-08.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/08.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-08.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/09.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-09.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/09.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-09.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/10.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-10.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/10.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-10.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/11.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-11.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/11.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-11.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/12.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-12.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/12.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-12.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/11.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-11.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/11.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-11.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/12.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/thumb-12.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/12.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/thumb-12.jpg" />
                 </div>
                 <div data-p="210.00" style="display: none;">
-                    <img class="lazy" data-u="image" src="img/slider/food_1.jpg" />
-                    <img class="lazy" data-u="thumb" src="img/slider/food_1.jpg" />
+                    <div class="image1180x500">
+                        <img class="jssor_image" data-u="image" src="img/slider/food_1.jpg" />
+                    </div>
+                        <img class="lazy" data-u="thumb" src="img/slider/food_1.jpg" />
                 </div>
                 <a data-u="add" href="http://www.jssor.com/artyomgolubov27/image-gallery.slider" style="display:none">Image Gallery</a>
                 <!--<img class="lazy" data-u="add" title="Jssor Slider" style="display:block;position:absolute;top:0;right:0;width:0px;height:0px;" src="" />-->
