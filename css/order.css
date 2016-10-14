@@ -70,7 +70,7 @@
     width: 25px;
     background-image: url(/img/icons/basket.png);
     background-repeat: no-repeat;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     outline: 0 !important;
 }
 

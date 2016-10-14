@@ -13,6 +13,7 @@
     color: #989696;
     font-size: small;
     width: 100%;
+    height: 100%;
     justify-content:space-between;
 }
 
@@ -160,10 +161,11 @@
     font-size: 13px;
     color: #512c15;
     font-family: Roboto-Regular;
-    padding-left: 15px;
+    padding-left: 3px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 15px;
+    padding-right: 3px;
+    height: 100%;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
