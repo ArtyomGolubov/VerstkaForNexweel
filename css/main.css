@@ -123,6 +123,18 @@
     float: left;
 }
 
+#user_block_in_menu #prof_icon {
+    color: #fff;
+}
+
+#user_block_in_menu .prof_icon {
+    background: transparent;
+}
+
+#user_block p, #user_block_in_menu p{
+    margin: 0;
+}
+
 /*.user_block_autorise {
     display: none;
     border: 1px solid #ecece0;

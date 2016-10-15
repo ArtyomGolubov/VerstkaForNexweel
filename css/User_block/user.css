@@ -39,7 +39,7 @@
 .prof_icon.active {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    border-bottom: white;
+    /*border-bottom: white;*/
     background-color: white;
     z-index: 4;
 }
@@ -97,6 +97,7 @@
 
     #scroll_alert > div > div.alert_time {
         float: right;
+        color: #f89b2f;
     }
 
 .prof_zak, .prof_zak2, .prof_dialog, .prof_mess, .prof_alert {
@@ -217,7 +218,7 @@
 #prof_alert {
     /*max-height: 400px;*/
     width: 320px;
-    margin-top: -3px;
+    margin-top: -1px;
 }
 
 #prof_zak div *,
@@ -355,14 +356,14 @@
     border: 1px solid #e6e6e6;
     resize: none;
     width: 100%;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
 }
 
     #prof_mess textarea:active {
         border: 1px solid #e6e6e6;
         resize: none;
         width: 100%;
-        border-radius: 5px;
+        /*border-radius: 5px;*/
     }
 
 #scroll_alert .prof-item-notice, 
@@ -381,7 +382,7 @@
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     width: 100%;
-    margin-top: -3px;
+    margin-top: -1px;
 }
 
 
@@ -483,4 +484,8 @@
     width: 280px;
     margin-top: 1px;
     margin-left: -2px;
+}
+
+@media only screen and (max-width : 768px) {
+
 }

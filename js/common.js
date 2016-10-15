@@ -229,9 +229,10 @@ $(document).ready(function () { // вся мaгия пoсле зaгрузки с
 });
 
 // gmap
-var marker;
-
+// Здесь настраивваем карту
 function initMap() {
+    var marker;
+
     var map = new google.maps.Map(document.getElementById('gmap'), {
         zoom: 16,
         center: { lat: 46.4821837, lng: 30.737634 },
