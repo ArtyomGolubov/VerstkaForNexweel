@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/dishes.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/User_block/user.css" />
 
     <script src="libs/jquery/jquery-2.1.4.min.js"></script>
     <script src="libs/jquery_lazyload-1.9.7/jquery.lazyload.min.js"></script>
@@ -26,7 +27,22 @@
     </div>
 
     <div class="mob_nav_menu_btn">
-        <button onclick="MobMenuToggle()" class="menu_btn"></button>
+        <!--<button onclick="MobMenuToggle()" class="menu_btn"></button>-->
+        <div id="nav-icon1" onclick="MobMenuToggle()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="user_block_in_menu">
+            <div class="user_block">
+
+                <a class="p14 brown bold">
+                    <svg class="user_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
+                        <path fill="#f99b30" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                    </svg>Войти
+                </a> / <a class="p14 brown bold">Регистрация</a>
+            </div>
+        </div>
     </div>
     <div class="mobile-menu">
         <ul>
@@ -49,9 +65,10 @@
                 <a href="#">Контакты</a>
             </li>
         </ul>
-        <div class="menu_mob_btn_container">
-            <div onclick="MobMenuToggle()" class="menu_btn close"></div>
-        </div>
+        <!--<div class="menu_mob_btn_container">
+            <div onclick="MobMenuToggle()" class="menu_btn close">
+            </div>
+        </div>-->
     </div>
 
     <header class="wrapper">
@@ -750,7 +767,8 @@
 
         <div title="Вернуться к началу" id="toTop"><img src="img/icons/up_button.png" alt="Alternate Text" /></div>
 
-        <script src="js/common.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/user_block.js"></script>
 </body>
 </html>
 
