@@ -176,13 +176,16 @@ function SizeMenuInit() {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function dropdownMenu() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    if ($('#myDropdown').is('.show')) {
-        //console.log('border');
-        $('.nav_main').css('border-radius', '5px 5px 0 5px');
+    //document.getElementById("myDropdown").classList.toggle("show");
+    if ($('#myDropdown').is(':visible')) {
+        console.log('visible');
+        $('#myDropdown').hide('fast');
+        $('.nav_main').css('border-radius', '5px');
     }
     else {
-        $('.nav_main').css('border-radius', '5px');
+        console.log('not visible');
+        $('#myDropdown').show('fast');
+        $('.nav_main').css('border-radius', '5px 5px 0 5px');
     }
 }
 
@@ -290,4 +293,23 @@ function MobMenuToggle() {
         body.css('overflow', 'hidden');
     }
 }
+
+//Menu "Hamburger" Icon Animations
+$(document).ready(function () {
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+        $(this).toggleClass('open');
+    });
+});
+
+// закрываем боковое меню при перевороте экрана.
+$(window).bind('orientationchange', function (e) {
+    $(window).ready(function () {
+        if ($('.mobile-menu').css('left') == '0px') {
+            $('.mobile-menu').css('left', '-100%');
+            $('body').css('overflow', 'auto');
+
+            $('#nav-icon1').removeClass('open');
+        }
+    });
+});
 
