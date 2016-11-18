@@ -15,7 +15,8 @@
     }
 
     .dish {
-        float: left;
+        /*float: left;*/
+        margin-bottom: 50px;
     }
 
     .info img {
@@ -216,12 +217,12 @@
 
     /*.head_item {
         width: 100%;
-    }
+    }*/
 
     #head_info {
         width: 100%;
         margin: 30px 0 20px 0px !important;
-    }*/
+    }
 
     #user_block {
         position: relative !important;

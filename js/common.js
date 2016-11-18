@@ -3,15 +3,6 @@ $(window).on('load', function () {
 
     setMenuItemsWidth();
 
-    //console.log('screen = ' + $(window).width());
-
-    //var preloader = $('#page-preloader'),
-    //    loader = preloader.find('.loader');
-    //loader.fadeOut();
-    //preloader.delay(350).fadeOut('slow');
-    //$('#content').show();
-
-    //console.log('screen = ' + $(window).width());
     // Добавляем обработчик, в котором узнаем: делать фиксированное навигационное меню или нет.
     window.addEventListener('scroll', Ascroll, false);
 
@@ -63,22 +54,6 @@ function Ascroll() {
         }
     }
 }
-
-//$(window).ready(function () {
-//        // здесь блокирую установку курсора в инпут с количеством на странице блюда
-//        $("input[name^='touchspin']").attr("readonly", true);
-
-//        // Добавляем обработчик, в котором узнаем: делать фиксированное навигационное меню или нет.
-//        window.addEventListener('scroll', Ascroll, false);
-
-//        Ascroll();
-//        // перемещаем пункты меню в выпадающее меню, если они угли вниз.
-//        SizeMenuInit();
-//        // перемещаем пункты меню в выпадающий список, если они рядом с правой границей монитора.
-//        ChangeMainMenu();
-//        // Проверяем нужно ли показывать кнопку выпадающего списка.
-//        CheckDropdownMenuBtn();       
-//});
 
 $(window).bind('orientationchange', function (e) {
     $(window).ready(function () {

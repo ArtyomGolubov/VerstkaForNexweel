@@ -563,9 +563,9 @@
     border-radius: 5px;
 }
 
-    .dropbtn:hover, .dropbtn:focus,
-    .menu_btn:hover, .menu_btn:focus {
-        /*background-color: #512c15;*/
+    .dropbtn:focus,
+    .menu_btn:focus {
+        background-color: #512c15;
     }
 
     .dropbtn:active, .menu_btn:active {
@@ -752,6 +752,7 @@ body.mob-act {
     max-height: 220px;*/
     width: 100%;
     height: 100%;
+    margin: 0px 0px 10px 0 !important;
 }
 
 .dishes_img_middle_x_4 h4,
