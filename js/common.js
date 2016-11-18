@@ -223,6 +223,7 @@ function dropdownMenu() {
     if ($('#myDropdown').is(':visible')) {
         $('#myDropdown').hide('fast');
         $('.nav_main').css('border-radius', '5px');
+        $('.dropbtn').blur();
     }
     else {
         $('#myDropdown').show('fast');

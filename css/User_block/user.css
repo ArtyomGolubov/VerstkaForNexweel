@@ -146,19 +146,22 @@
 }
 
 #bottom_mark {
-    background-color: #f89b2f;
-    cursor: pointer;
-    padding-top: 10px;
     color: #fff;
-    padding-bottom: 10px;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    margin-right: 0px;
-    margin-left: 0px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    margin: auto;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background: linear-gradient(#f89b2e, #e8701b);
+    border: none;
+    outline: 0;
+}
+
+#bottom_mark span {
+    color: #fff !important;
+    font-family: Roboto-Bold !important;
+    font-size: 16px;
 }
 
 .click, #prof_icon {
@@ -235,7 +238,7 @@
 #prof_mess div *,
 #prof_dialog div *,
 #prof_alert  div *{
-    color: #512c15;
+    color: #532e17;
     font-family: Roboto-Regular;
 }
 
@@ -296,10 +299,11 @@
     padding-top: 22px;
     padding-bottom: 19px;
     padding-left: 12px;
-    color: #9c9c9c;
+    /*color: #9c9c9c;*/
     border-bottom: 1px solid #f5f5f5;
     background-color: white;
     z-index: 2;
+    font-family: Roboto-Bold;
 }
 
 .icon {
@@ -465,6 +469,10 @@
     text-decoration: none;
     display: -webkit-inline-box;
 }
+
+    .main-menu-back-button svg{
+        margin-bottom: 3px;
+    }
 
     .main-menu-back-button:hover > .main-menu-back-button-label {
         /*text-decoration: underline;*/

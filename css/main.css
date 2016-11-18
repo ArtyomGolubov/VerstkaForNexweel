@@ -565,11 +565,11 @@
 
     .dropbtn:hover, .dropbtn:focus,
     .menu_btn:hover, .menu_btn:focus {
-        background-color: #512c15;
+        /*background-color: #512c15;*/
     }
 
     .dropbtn:active, .menu_btn:active {
-        background-color: #7a5e4b;
+        background-color: #512c15;
     }
 
     .menu_btn.close {
@@ -743,6 +743,24 @@ body.mob-act {
 
 
 /*dishes BEGIN*/
+
+.dishes_img_middle_x_4 img,
+.dishes_img_middle_x_3 img,
+.dishes_img_middle_x_2 img{
+    float: none !important;
+    /*max-width: 220px;
+    max-height: 220px;*/
+    width: 100%;
+    height: 100%;
+}
+
+.dishes_img_middle_x_4 h4,
+.dishes_img_middle_x_3 h4,
+.dishes_img_middle_x_2 h4 {
+    text-align: center;
+}
+
+
 
 .dishes_img_left_x_4 img {
     max-width: 110px;
