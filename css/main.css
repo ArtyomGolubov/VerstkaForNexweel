@@ -757,7 +757,10 @@ body.mob-act {
 
 .dishes_img_middle_x_4 h4,
 .dishes_img_middle_x_3 h4,
-.dishes_img_middle_x_2 h4 {
+.dishes_img_middle_x_2 h4,
+.dishes_middle_x_4 h4,
+.dishes_middle_x_3 h4,
+.dishes_middle_x_2 h4 {
     text-align: center;
 }
 
