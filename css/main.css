@@ -426,6 +426,8 @@
         text-align: center;
         justify-content: center;
         display: flex;
+
+        overflow: hidden;
     }
 
         .nav_main li:first-of-type {
@@ -438,6 +440,9 @@
             font-size: 15px;
             text-decoration: none;
             align-self: center;
+
+            width: 100%;
+            padding: 7%;
         }
 
             .nav_main li a:hover {
@@ -667,6 +672,9 @@
             color: #fff;
             margin-left: 10px;
             text-decoration: none;
+
+            width: 100%;
+            padding: 2% 0;
         }
 
     .mobile-menu ul {

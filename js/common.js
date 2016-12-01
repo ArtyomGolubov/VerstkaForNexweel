@@ -252,7 +252,7 @@ $(window).ready(function () {
             if ($(".prof_info").is(":visible")) {
                 $('#user_block_in_menu #prof_icon').css('color', '#fff');
                 showItem('prof_other', 'prof_main');
-                $(".prof_info").hide('fast');   // открытие/скрывание главного окна профиля с содержимым
+                $(".prof_info").slideUp('fast');   // открытие/скрывание главного окна профиля с содержимым
                 // убираем активный класс из кнопки личного меню
                 $(".prof_icon").removeClass("active");
             }

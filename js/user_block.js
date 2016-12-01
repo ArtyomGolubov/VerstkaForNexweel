@@ -33,14 +33,14 @@ $(".prof_icon").on('click', function () {
     if ($(".prof_info").is(":visible")) {
         $('#user_block_in_menu #prof_icon').css('color', '#fff');
         showItem('prof_other', 'prof_main');
-        $(".prof_info").hide('fast');   // открытие/скрывание главного окна профиля с содержимым
+        $(".prof_info").slideUp('fast');   // открытие/скрывание главного окна профиля с содержимым
         // убираем активный класс из кнопки личного меню
         $(".prof_icon").removeClass("active");
     }
     else {
         $('#user_block_in_menu #prof_icon').css('color', '#512c15');
         $(".prof_info").addClass("main-data-menu-opened");
-        $(".prof_info").show('fast');   // открытие/скрывание главного окна профиля с содержимым 
+        $(".prof_info").slideDown('fast');   // открытие/скрывание главного окна профиля с содержимым 
         // добавляем активный класс к кнопке личного меню
         $(".prof_icon").addClass("active");
     }
@@ -50,9 +50,9 @@ console.log('.prof_icon');
 
 /* Функция для управления показом содержимого(в виде дочерних окон) внутри главного окна профиля */
 function showItem(thisCLASS, CLASS) {  // параметры: (скрываемое окно, показываемое окно)
-    $('.' + thisCLASS).hide('fast');   // скрыть "скрываемое окно"
-    $(".prof-main-punkt").hide('fast');
-    $('.' + CLASS).show('fast');   // показать "показываемое окно"
+    $('.' + thisCLASS).slideUp('fast');   // скрыть "скрываемое окно"
+    $(".prof-main-punkt").slideUp('fast');
+    $('.' + CLASS).slideDown('fast');   // показать "показываемое окно"
     if (CLASS == 'prof_main') {  // если необходимо открыть первоначальное меню, добавляем ему класс, который делает его 100% ширины блока с кнопкой профиля
         $(".prof_info").addClass("main-data-menu-opened");
     }
